@@ -70,11 +70,14 @@ const Apply: NextPage = () => {
           <input required type="radio" id="active-no" name="active" />
           <label htmlFor="active-no">No</label>
         </FormItem>
+        <FormItem required question="What timezone are you in?" index={8} key={8}>
+          <TextInput required placeholder="PST, MST, CDT, EST, etc." name="timezone" />
+        </FormItem>
         <FormItem
           required
           question="What can you bring to our SMP? Please write at least 2 sentences."
-          index={8}
-          key={8}
+          index={9}
+          key={9}
         >
           <TextInput
             required
@@ -86,7 +89,9 @@ const Apply: NextPage = () => {
             }}
           />
         </FormItem>
-        <SubmitButton>Submit</SubmitButton>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <SubmitButton>Submit</SubmitButton>
+        </div>
       </form>
     </div>
   );

@@ -44,7 +44,7 @@ export const POST: Handler = async (req) => {
         value: form.get("mcjava")?.toString() === "on" ? "Yes" : "No",
       },
       {
-        name: "6. If you're a content creator, what platforms would you post the CombinationSMP on?",
+        name: "6. If you're a content creator, what platforms would you post the CombinationSMP on? (Please provide links)",
         value: form.get("social")?.toString() ?? "N/A",
       },
       {
@@ -56,7 +56,11 @@ export const POST: Handler = async (req) => {
         value: form.get("active")?.toString() === "on" ? "Yes" : "No",
       },
       {
-        name: "9. What can you bring to our SMP? Please write at least 2 sentences.",
+        name: "9. What timezone are you in?",
+        value: form.get("timezone")?.toString() ?? "N/A",
+      },
+      {
+        name: "10. What can you bring to our SMP? Please write at least 2 sentences.",
         value: form.get("sentences")?.toString() ?? "N/A",
       },
     ])
