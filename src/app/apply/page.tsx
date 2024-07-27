@@ -48,13 +48,18 @@ const Apply: NextPage = () => {
             <>
               If you&apos;re a content creator, what platforms
               <br />
-              would you post the CombinationSMP on?
+              would you post the CombinationSMP on? (Please provide links)
             </>
           }
           index={5}
           key={5}
         >
-          <TextInput placeholder="TikTok, YouTube, Instagram Reels, etc." name="social" />
+          <TextInput
+            multiline
+            placeholder="TikTok, YouTube, Instagram Reels, etc."
+            name="social"
+            multilineProps={{ rows: 2 }}
+          />
         </FormItem>
         <FormItem required question="What activities do you do most in Minecraft?" index={6} key={6}>
           <TextInput required placeholder="Building, redstone, etc." name="activities" />
