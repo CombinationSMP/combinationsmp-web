@@ -18,6 +18,7 @@ export const env = createEnv({
    * `NEXT_PUBLIC_`.
    */
   client: {
+    NEXT_PUBLIC_HOST: z.string(),
     // NEXT_PUBLIC_CLIENTVAR: z.string(),
   },
 
@@ -29,6 +30,7 @@ export const env = createEnv({
     NODE_ENV: process.env.NODE_ENV,
     WEBHOOK_ID: process.env.WEBHOOK_ID,
     WEBHOOK_TOKEN: process.env.WEBHOOK_TOKEN,
+    NEXT_PUBLIC_HOST: process.env.NEXT_PUBLIC_HOST,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

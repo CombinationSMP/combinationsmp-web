@@ -2,6 +2,7 @@ import { EmbedBuilder, WebhookClient } from "discord.js";
 import type { Handler } from "@/types";
 import { env } from "@/env";
 import { NextResponse } from "next/server";
+import { NextURL } from "next/dist/server/web/next-url";
 
 interface Form {
   name: string;
@@ -63,9 +64,14 @@ export const POST: Handler = async (req) => {
 
   await client.send({ embeds: [embed] });
 
-  const redirectUrl = req.nextUrl.clone();
+  let redirectUrl: NextURL;
 
-  redirectUrl.pathname = "/apply/submitted";
+  if (env.NODE_ENV === "production") {
+    redirectUrl = new NextURL(`https://${env.NEXT_PUBLIC_HOST}/apply/submitted`);
+  } else {
+    redirectUrl = req.nextUrl.clone();
+    redirectUrl.pathname = "/apply/submitted";
+  }
 
   return NextResponse.redirect(redirectUrl);
 };
