@@ -1,0 +1,24 @@
+@import "../../../styles/vars.module.scss";
+
+.text {
+  all: unset;
+  color: #ffffff;
+  background-color: $tertiary;
+  border-radius: 10px;
+  padding: 0.5rem;
+  transition: background-color 0.2s;
+  font-size: 1.25rem;
+  width: calc(100% - 1rem);
+
+  &::placeholder {
+    color: $secondary;
+  }
+
+  &:hover {
+    background-color: darken($tertiary, 3%);
+  }
+
+  &:focus {
+    background-color: darken($tertiary, 6%);
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../styles/vars.module.scss";
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  background-color: $tertiary;
+  border-radius: 10px;
+  padding: 0.75rem;
+  transition: background-color 0.2s;
+  color: #ffffff;
+  font-size: 1.25rem;
+
+  &:hover {
+    background-color: darken($tertiary, 3%);
+  }
+
+  &.mousedown {
+    background-color: darken($tertiary, 10%) !important;
+  }
+}

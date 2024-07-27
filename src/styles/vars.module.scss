@@ -1,0 +1,13 @@
+$primary: #46397b;
+$secondary: #3e346a;
+$tertiary: #5e4ea3;
+$onBackground: #24212d;
+$background: #131028;
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  tertiary: $tertiary;
+  onBackground: $onBackground;
+  background: $background;
+}
