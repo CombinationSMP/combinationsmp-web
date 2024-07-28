@@ -89,6 +89,9 @@ const Apply: NextPage = () => {
             }}
           />
         </FormItem>
+        <FormItem question="How'd you hear about us?" index={10} key={10}>
+          <TextInput placeholder="TikTok, Instagram, Disboard, etc." name="referral" />
+        </FormItem>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <SubmitButton>Submit</SubmitButton>
         </div>

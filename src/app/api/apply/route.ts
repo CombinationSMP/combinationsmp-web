@@ -4,18 +4,6 @@ import { env } from "@/env";
 import { NextResponse } from "next/server";
 import { NextURL } from "next/dist/server/web/next-url";
 
-interface Form {
-  name: string;
-  age: string;
-  discord: string;
-  minecraft: string;
-  mcjava: string;
-  social?: string;
-  activities: string;
-  active: string;
-  sentences: string;
-}
-
 //https://discord.com/api/webhooks/1266554549980889109/LzGMPHLUVf4VbBMqWgXjRBiq7EF18sgp6Pvfd4WUsP9YFRQFukJHi1bB08OaztpwZc2b
 const client = new WebhookClient({ id: env.WEBHOOK_ID, token: env.WEBHOOK_TOKEN });
 
@@ -63,6 +51,11 @@ export const POST: Handler = async (req) => {
       {
         name: "10. What can you bring to our SMP? Please write at least 2 sentences.",
         value: form.get("sentences")?.toString() ?? "N/A",
+      },
+      {
+        name: "11. How'd you hear about us?",
+        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+        value: form.get("referral")?.toString() || "N/A",
       },
     ])
     .setTimestamp(Date.now());
