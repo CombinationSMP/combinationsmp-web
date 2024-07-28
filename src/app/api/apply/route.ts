@@ -45,7 +45,8 @@ export const POST: Handler = async (req) => {
       },
       {
         name: "6. If you're a content creator, what platforms would you post the CombinationSMP on? (Please provide links)",
-        value: form.get("social")?.toString() ?? "N/A",
+        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+        value: form.get("social")?.toString() || "N/A",
       },
       {
         name: "7. What activities do you do most in Minecraft?",
