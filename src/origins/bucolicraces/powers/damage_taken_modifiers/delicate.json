@@ -1,0 +1,14 @@
+{
+    "name": "Delicate",
+    "description": "Due to your build you take more kinetic damage",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "flyIntoWall"
+    },
+    "modifier": {
+      "name": "Additional_damage_taken_while_on_fire",
+      "value": 3000,
+      "operation": "addition"
+    }
+  }

@@ -1,0 +1,50 @@
+{
+  "type": "origins:action_on_callback",
+  "entity_action_added": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:width 0.9"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:height 0.9"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist set true @s"
+      }
+
+    ]
+  },
+  "entity_action_chosen": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:width 0.9"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:height 0.9"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist set true @s"
+      }
+
+    ]
+  },
+  "entity_action_removed": {
+    "type": "origins:execute_command",
+    "command": "scale reset @s",
+    "permission_level": 4
+  },
+  "execute_chosen_when_orb": true,
+
+  "name": "Below Average",
+  "description": "You are slightly shorter then the average human"
+  
+  
+}

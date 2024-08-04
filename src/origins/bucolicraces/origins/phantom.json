@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "bucolicraces:zmisc_modifiers/nosleep",
+        "bucolicraces:size_modifiers/threequartersize",
+        "bucolicraces:abilities/phantomise",
+        "bucolicraces:zmisc_modifiers/heliophobia",
+        "bucolicraces:skin_modifiers/smoke_particles",
+        "bucolicraces:size_modifiers/reset",
+        "bucolicraces:skin_modifiers/dark_ghost_skin"
+
+
+    ],
+    "icon": "minecraft:phantom_membrane",
+    "impact": 3,
+    "name": "Phantom",
+    "description": "You are a phantom, a ghostly being capable of shifting through walls!"
+}

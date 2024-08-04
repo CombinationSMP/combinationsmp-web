@@ -1,0 +1,21 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:shulker_bullet",
+    "name": "Air Shot",
+    "description":"Fire 3 projectiles that send enemies into the air",
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 8
+    },
+    "count": 4,
+    "interval": 5,
+    "sound": "minecraft:entity.llama.spit",
+    "speed": 1.5,
+    "divergence": 7,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "strictly_origins:damaged_durendal"
+                }
+            },
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "pmmo_xp_bottles:combat",
+                    "tag": "{amount:6500}"
+                }
+            }
+        ]
+    }
+}

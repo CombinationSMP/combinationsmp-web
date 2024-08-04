@@ -1,0 +1,18 @@
+{
+    "powers": [
+        "origins:shulker_inventory",
+        "strictly:superstealth",
+        "origins:tailwind",
+        "origins:fragile",
+        "strictly:cloak",
+        "strictly:money_lover",
+        "strictly:strong",
+        "origins:more_exhaustion",
+        "strictly:night-owl"
+    ],
+    "icon": {
+        "item": "minecraft:diamond"
+    },
+    "order": 9,
+    "impact": 2
+}

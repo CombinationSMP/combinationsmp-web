@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/quartersize",
+    "bucolicraces:speed_modifiers/quartertallflight",
+    "bucolicraces:health_modifiers/threeheart",
+    "bucolicraces:skills/greaterflight",
+    "bucolicraces:damage_taken_modifiers/ferrumphobia",
+    "bucolicraces:status_effect_modifiers/healingmagic",
+    "bucolicraces:armor_modifiers/ferrumphobiaarmor",
+    "bucolicraces:skin_modifiers/fairy_particles",
+    "bucolicraces:on-hit_modifiers/weak"
+
+  ],
+  "icon": "minecraft:glowstone_dust",
+  "impact": 2,
+  "name": "Fairy",
+  "description": "The smallest of the species originating from the Fae Wild. Tiny and flighted, fairies are beings of nature and aren't good at picking fights!"
+}

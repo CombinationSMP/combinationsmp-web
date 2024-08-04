@@ -1,0 +1,21 @@
+{
+    "type": "origins:recipe",
+    "name": "Cookie Crafter",
+    "description": "Craft cookies with a sugar and a wheat",
+    "recipe": {
+        "id": "origins:cheap_cookie",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "minecraft:sugar"
+            },
+            {
+                "item": "minecraft:wheat"
+            }
+        ],
+        "result": {
+            "item": "minecraft:cookie",
+            "count": 16
+        }
+    }
+}

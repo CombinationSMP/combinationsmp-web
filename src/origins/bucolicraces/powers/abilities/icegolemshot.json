@@ -1,0 +1,21 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:snow_golem",
+    "cooldown": 5000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 12
+    },
+    "name": "Summon Snow Golem",
+    "description": "You summon an snow friend to help you!",
+    "count": 1,
+    "interval": 5,
+    "sound": "minecraft:entity.llama.spit",
+    "speed": 1.5,
+    "divergence": 7,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

@@ -1,0 +1,15 @@
+{
+	"powers": [
+                "strictly:flamethrower",
+		"strictly:forest_vision",
+                "strictly:hyper_sight",
+                "strictly:towering",
+                "strictly:vegetarian",
+                "strictly:spindly",
+                "strictly:jump3",
+                "strictly:falldmg"
+	],
+	"icon": "minecraft:oak_leaves",
+        "impact": 1,
+        "order": 1
+}

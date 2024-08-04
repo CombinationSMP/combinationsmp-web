@@ -1,0 +1,29 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/twoandahalfblockstall",
+    "bucolicraces:jumping_modifiers/threetalljump",
+    "bucolicraces:speed_modifiers/threetallspeed",
+    "bucolicraces:health_modifiers/fifteenheart",
+  
+    "bucolicraces:skin_modifiers/light_red_skin",
+    "bucolicraces:damage_taken_modifiers/water_vulnerability",
+    "bucolicraces:skin_modifiers/flame_particles",
+    "bucolicraces:on-hit_modifiers/claws",
+    "bucolicraces:damage_taken_modifiers/fire_immunity",
+    "bucolicraces:damage_taken_modifiers/poisonresist",
+    "bucolicraces:ally_modifiers/trading",
+    "bucolicraces:diet_modifiers/dietnone",
+    "bucolicraces:on-hit_modifiers/soul_harvest",
+    "bucolicraces:ally_modifiers/irongolemmad"
+    ],
+  "icon": "minecraft:fire_charge",
+  "impact": 2,
+  "name": "Demon",
+  "description": "Decendents of Demons and born in fire, demon blood courses through your veins!"
+}
+
+
+
+
+
+

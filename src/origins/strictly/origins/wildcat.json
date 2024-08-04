@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"strictly:feline_grace",
+		"strictly:feared_hunter",
+		"strictly:soft_paws",
+		"origins:climbing",
+		"strictly:nocturnal_eyes1",
+		"origins:carnivore",
+		"strictly:water_weary"
+	],
+	"icon": "minecraft:jungle_sapling",
+	"order": 5,
+	"impact": 2
+}

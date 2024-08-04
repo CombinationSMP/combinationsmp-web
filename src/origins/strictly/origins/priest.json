@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "strictly:scholar",
+        "strictly:nimble",
+        "strictly:holy_shield",
+        "origins:vegetarian",
+        "origins:fall_immunity",
+        "strictly:holy_curse",
+        "origins:ender_particles"
+    ],
+    "icon": {
+        "item": "relics:holy_locket"
+    },
+    "order": 10,
+    "impact": 1
+}

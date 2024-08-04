@@ -1,0 +1,46 @@
+{
+    "type": "origins:active_self",
+    "name": "WEEEEEEEeeeee",
+    "description": "When you consume a rocket [using the PRIMARY ACTION KEY] you find yourself shooting in the air",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:add_velocity",
+                "y": 150,
+                "space": "world",
+                "set": true
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.firework_rocket.shoot"
+            }
+        ]
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:firework_rocket"
+            }
+        }
+    }
+}

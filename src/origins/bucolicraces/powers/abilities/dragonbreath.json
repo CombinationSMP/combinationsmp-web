@@ -1,0 +1,21 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:dragon_fireball",
+    "name": "Dragon's Breath",
+    "description": "Fire a projectile that leaves a damaging aura",
+    "cooldown": 700,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 7
+    },
+    "count": 1,
+    "interval": 5,
+    "sound": "minecraft:entity.ender_dragon.growl",
+    "speed": 1.5,
+    "divergence": 7,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

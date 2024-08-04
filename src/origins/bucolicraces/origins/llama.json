@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "bucolicraces:diet_modifiers/vegetarian",
+    "bucolicraces:ally_modifiers/wolfhunt",
+    "bucolicraces:abilities/spit",
+    "bucolicraces:on-hit_modifiers/llama_spit",
+    "bucolicraces:size_modifiers/elfwidth",
+    "bucolicraces:size_modifiers/belowaverage",
+    "bucolicraces:zmisc_modifiers/shed"
+  ],
+  "icon": "minecraft:lead",
+  "impact": 2,
+  "name": "Llama",
+  "description": "A sentient spitting sack of fur"
+}

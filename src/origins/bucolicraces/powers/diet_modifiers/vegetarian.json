@@ -1,0 +1,34 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "Vegetarian",
+  "description": "Eats veggies",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "bucolicraces:carnivore"
+            }
+          }
+        ]
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:food"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:ignore_diet"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

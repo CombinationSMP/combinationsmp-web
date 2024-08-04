@@ -1,0 +1,13 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "name":"Friend of The Forest",
+    "description": "Your alignment prohibits you from harming passive creatures!",
+    "target_condition": {
+        "type": "origins:in_tag",
+        "tag": "bucolicraces:passive"
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -1
+    }
+}

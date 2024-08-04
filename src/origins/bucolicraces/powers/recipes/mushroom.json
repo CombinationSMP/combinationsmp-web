@@ -1,0 +1,44 @@
+{ 
+    "name": "Stewer",
+    "description": "Craft mushroom stews with only one mushroom",
+    "type": "origins:multiple",
+    "brownmush":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:cheap_mush_brown",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:brown_mushroom"
+                },
+                {
+                    "item": "minecraft:bowl"
+                }
+            ],
+            "result": {
+                "item": "minecraft:mushroom_stew",
+                "count": 1
+            }
+        }
+    },
+    "redmsuh":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:cheap_mush_red",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:red_mushroom"
+                },
+                {
+                    "item": "minecraft:bowl"
+                }
+            ],
+            "result": {
+                "item": "minecraft:mushroom_stew",
+                "count": 1
+            }
+        }
+    }
+    
+}

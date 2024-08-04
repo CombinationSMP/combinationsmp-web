@@ -1,0 +1,16 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:execute_command",
+        "command": "summon ars_nouveau:flourishing_weald_walker ~ ~ ~"
+		
+	},
+	"cooldown": 20000 ,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 8
+	},
+	"name": "Summon Weald Walker",
+	"description": "You summon a tree friend to help you!"
+}

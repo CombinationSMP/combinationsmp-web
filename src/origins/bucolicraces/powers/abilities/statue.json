@@ -1,0 +1,41 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effects": [
+			{
+				"effect": "minecraft:slowness",
+				"duration": 150,
+				"amplifier": 9
+			},
+			{
+				"effect": "minecraft:regeneration",
+				"duration": 150,
+				"amplifier": 2
+			},
+			{
+				"effect": "minecraft:resistance",
+				"duration": 150,
+				"amplifier": 9
+			},
+			{
+				"effect": "minecraft:mining_fatigue",
+				"duration": 150,
+				"amplifier": 9
+			},
+			{
+				"effect": "minecraft:weakness",
+				"duration": 150,
+				"amplifier": 9
+			}
+		]
+	},
+	"cooldown": 1000,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 18
+	},
+	"name": "Harden",
+	"description": "Lose your ability to move or attack for a short time in exchange for healing!"
+}

@@ -1,0 +1,15 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [{
+      "type": "origins:execute_command",
+      "command": "/summon area_effect_cloud ~ ~ ~ {Particle:\"forbidden_arcanus:soul\",Radius:5f,Duration:100,WaitTime:20,Effects:[{Id:-72b,Amplifier:3b,Duration:100,ShowParticles:0b}]}"
+      }
+    ]
+    },
+    "cooldown": 3000,
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+    }

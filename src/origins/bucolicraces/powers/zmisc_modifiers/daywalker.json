@@ -1,0 +1,130 @@
+{
+  "type": "origins:multiple",
+  "name": "Daywalker",
+  "description": "During the day you are bigger and have increased stats, and during the night you are much weaker.",
+  "day_armor": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "name": "Natural Armor health bonus",
+      "attribute": "minecraft:generic.armor",
+      "value": 10,
+      "operation": "addition"
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun"
+    }
+  },
+  "day_health": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": 10
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun"
+    }
+  },
+  "day_size": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:width 1.5"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:height 1.5"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun"
+    }
+  },
+  "day_attack": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "operation": "addition",
+      "value": 10,
+      "name": "ATK Increase",
+      "attribute": "generic.attack_damage"
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun"
+    }
+  },
+  "day_effect": {
+    "type": "origins:particle",
+    "particle": "minecraft:wax_on",
+    "frequency": 4,
+    "condition": {
+      "type": "origins:exposed_to_sun"
+    }
+  },
+  "day_effect2": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 120,
+    "effect": {
+      "effect": "minecraft:glowing",
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": true
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun"
+    }
+  },
+  "night_health": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -10
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun",
+      "inverted": true
+    }
+  },
+  "night_size": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:width 0.75"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:height 0.75"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun",
+      "inverted": true
+    }
+  },
+  "night_attack": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "operation": "addition",
+      "value": -10,
+      "name": "ATK Increase",
+      "attribute": "generic.attack_damage"
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun",
+      "inverted": true
+    }
+  }
+}

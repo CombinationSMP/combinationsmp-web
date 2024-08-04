@@ -1,0 +1,14 @@
+
+  {
+    "name": "Hollow Bones",
+    "description": "Crashing into walls is *not* good for your health",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "flyIntoWall"
+    },
+    "modifier": {
+      "value": 1.5,
+      "operation": "multiply_total"
+    }
+  }

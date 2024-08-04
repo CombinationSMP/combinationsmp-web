@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "name": "Beetle Armor",
+  "description":"Your beetle shell is naturally very strong",
+  "modifier": {
+    "name": "Natural Armor health bonus",
+    "attribute": "minecraft:generic.armor",
+    "value": 14,
+    "operation": "addition"
+  }
+}

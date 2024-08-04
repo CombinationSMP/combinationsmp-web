@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_jump",
+    "name": "3 Block Jump",
+    "description": "You can jump three blocks high",
+    "modifier": {
+        "operation": "addition",
+        "value": 0.4
+    }
+}

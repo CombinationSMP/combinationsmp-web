@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "bucolicraces:zmisc_modifiers/heliophobia",
+    "bucolicraces:status_effect_modifiers/nightvision",
+    "bucolicraces:ally_modifiers/undeadteam",
+    "bucolicraces:ally_modifiers/undeadinvite",
+    "bucolicraces:entity_groups/undeadentity",
+    "bucolicraces:status_effect_modifiers/sinking",
+    "bucolicraces:status_effect_modifiers/slowwater",
+    "bucolicraces:skin_modifiers/undead_skin",
+    "bucolicraces:diet_modifiers/rawbuff",
+    "bucolicraces:diet_modifiers/rawdiet",
+    "bucolicraces:damage_taken_modifiers/hungerresist",
+    "bucolicraces:ally_modifiers/trading",
+    "bucolicraces:ally_modifiers/irongolemmad"
+
+
+    
+  ],
+  "icon": "minecraft:zombie_head",
+  "impact": 2,
+  "name": "Undead",
+  "description": "You are the result of necromancy gone wrong! You have woken up from your eternal slumber to walk this earth once again."
+}

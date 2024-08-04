@@ -1,0 +1,35 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "Raw Carnivore",
+  "description": "You can only eat meat that hasn't been cooked... some say it has better flavor...",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "bucolicraces:raw_meat"
+            }
+          }
+        ],
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:food"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:ignore_diet"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

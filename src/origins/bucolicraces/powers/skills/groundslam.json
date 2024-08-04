@@ -1,0 +1,20 @@
+{
+    "type": "origins:action_on_land",
+
+    "entity_action": {
+        "type": "origins:explode",
+        "power": 3,
+        "destruction_type": "none",
+        "damage_self": false,
+        "create_fire": false
+    },
+
+    "condition":
+	{
+        "type": "origins:fall_distance",
+        "comparison": ">",
+        "compare_to": 8
+	},
+       "name":"Heavy",
+       "description":"When falling from a great height, things around you tend to die"
+}

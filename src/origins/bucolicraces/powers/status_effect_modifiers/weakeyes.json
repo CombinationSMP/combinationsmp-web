@@ -1,0 +1,36 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 120,
+  "name": "Weak Eyes",
+  "description": "Your eyes arnt built for bright lights! You will be blinded.",
+  "effect": {
+    "effect": "minecraft:blindness",
+    "amplifier": 0,
+    "show_particles": false,
+    "show_icon": false,
+    "is_ambient": true
+  },
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:exposed_to_sun"
+        }
+      ,
+      {
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:light_level",
+          "light_type": "block",
+          "comparison": ">",
+          "compare_to": 7,
+          "offset_x": 0,
+          "offset_z": 0,
+          "offset_y": 0
+        }
+      }
+    ]
+  }
+}

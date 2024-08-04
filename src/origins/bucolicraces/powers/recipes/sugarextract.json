@@ -1,0 +1,85 @@
+{ 
+    "name": "Sugar Extractor",
+    "description": "Extract sugar from sugary foods by placing them into your crafting grid",
+    "type": "origins:multiple",
+    "apples":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:sugar_apple",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:apple"
+                }
+            ],
+            "result": {
+                "item": "minecraft:sugar",
+                "count": 3
+            }
+        }
+    },
+    "honey":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:sugar_honey",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:honey_bottle"
+                }
+            ],
+            "result": {
+                "item": "minecraft:sugar",
+                "count": 8
+            }
+        }
+    },
+    "sweetberries":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:sugar_berry",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:sweet_berries"
+                }
+            ],
+            "result": {
+                "item": "minecraft:sugar",
+                "count": 2
+            }
+        }
+    },
+    "glowberries":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:sugar_glow_berry",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:glow_berries"
+                }
+            ],
+            "result": {
+                "item": "minecraft:sugar",
+                "count": 8
+            }
+        }
+    },
+    "melon":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:sugar_melon",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:melon_slice"
+                }
+            ],
+            "result": {
+                "item": "minecraft:sugar",
+                "count": 1
+            }
+        }
+    }
+}

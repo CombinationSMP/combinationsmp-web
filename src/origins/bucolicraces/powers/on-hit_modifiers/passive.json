@@ -1,0 +1,12 @@
+{
+            "type": "origins:attribute",
+            "name": "Passive",
+            "description": "You can't kill anything",
+            "modifier": {
+              "operation": "addition",
+              "value":-200,
+              "name": "ATK Increase",
+              "attribute": "generic.attack_damage"
+            }
+
+}

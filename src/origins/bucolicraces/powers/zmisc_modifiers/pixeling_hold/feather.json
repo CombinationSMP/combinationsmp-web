@@ -1,0 +1,18 @@
+
+{
+    "type": "origins:modify_falling",
+    "name": "Parachute",
+    "description": "When you hold a feather you find yourself falling much slower",
+    "velocity": 0.005,
+    "take_fall_damage": false,
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:feather"
+            }
+        }
+    }
+}

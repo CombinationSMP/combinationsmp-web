@@ -1,0 +1,61 @@
+{
+	"type": "origins:multiple",
+	"flight": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:levitation",
+						"duration": 5,
+						"amplifier": 1,
+						"show_particles": false,
+						"show_icon": false,
+						"is_ambient": true
+					}
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "buzz:nectar_processing_storage",
+					"change": -1
+				}
+			]
+		},
+		"key": {
+			"key": "key.jump",
+			"continuous": true
+		},
+		"cooldown": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "buzz:nectar_processing_storage",
+					"comparison": ">=",
+					"compare_to": 10
+				},
+				{
+					"type": "origins:in_rain",
+					"inverted": true
+				}
+			]
+		}
+	},
+	"no_fall_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 0
+		}
+	}
+}

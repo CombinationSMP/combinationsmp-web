@@ -1,0 +1,22 @@
+{
+	"powers":[
+		"origins:carnivore",
+		"origins:elytra",
+		"origins:water_vulnerability",
+		"origins:fall_immunity",
+		"origins:damage_from_snowballs",
+		"origins:fire_immunity",
+		"origins-plus-plus:volcanic-dragon/fast_metabolism",
+		"origins-plus-plus:volcanic-dragon/hot_blooded",
+		"origins-plus-plus:volcanic-dragon/lava_breath",
+		"origins-plus-plus:volcanic-dragon/natural_armor",
+		"origins-plus-plus:volcanic-dragon/natural_strength",
+		"origins-plus-plus:volcanic-dragon/nether_spawn",
+		"origins-plus-plus:volcanic-dragon/slowness_in_cold",
+		"origins-plus-plus:volcanic-dragon/two_extra_hearts",
+		"origins-plus-plus:volcanic-dragon/volcanic_dash",
+		"origins-plus-plus:volcanic-dragon/weakness_in_cold"
+	],
+	"icon":"minecraft:lava_bucket",
+	"impact":3
+}

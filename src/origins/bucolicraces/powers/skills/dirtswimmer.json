@@ -1,0 +1,8 @@
+{
+    "name": "Do The Worm",
+    "description" : "You crawl on the ground at a faster rate when you sprint",
+    "type": "origins:swimming",
+    "condition": {
+        "type": "origins:on_block"
+    }
+}

@@ -1,0 +1,20 @@
+
+{
+    "type":"origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 120,
+    "effect": {
+      "effect": "minecraft:mining_fatigue",
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": true
+    },
+    "condition": {
+      "type": "origins:exposed_to_sky",
+      "inverted":true
+  },
+    "name": "Free As A Bird",
+    "description": "You are chronically tired when you are underground"
+  }

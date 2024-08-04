@@ -1,0 +1,41 @@
+{
+    "type": "origins:multiple",
+    "hidden":true,
+    "downovertime": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "bucolicraces:abilities/automaton/overheat",
+            "operation": "add",
+            "change": -3 
+        },
+        "interval": 60
+    },
+    "onfire": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "bucolicraces:abilities/automaton/overheat",
+            "operation": "add",
+            "change": 6
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:on_fire"
+        }
+    },
+    "cooling": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "bucolicraces:abilities/automaton/overheat",
+            "operation": "add",
+            "change": -10
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+            "type": "origins:conditioned_attribute",
+            "name": "Holy Smite",
+            "description": "When in The Nether deal more damage",
+            "modifier": {
+              "operation": "addition",
+              "value":4,
+              "name": "ATK Increase",
+              "attribute": "generic.attack_damage"
+            },
+          "condition":{
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_nether"
+                     }
+
+}

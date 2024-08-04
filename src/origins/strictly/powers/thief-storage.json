@@ -1,0 +1,9 @@
+{
+  "type": "origins:inventory",
+  "title": "Thief storage",
+  "drop_on_death": false,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": -15,
+  "max_stacks": 10,
+  "duration_per_stack": 60,
+  "effect": {
+    "effect": "minecraft:night_vision",
+    "show_particles": false,
+    "show_icon": false,
+    "is_ambient": false
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:brightness",
+        "comparison": "<",
+        "compare_to": 0.15
+      },
+      {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water",
+        "inverted": true
+      }
+    ]
+  },
+  "name": "Night Eye",
+  "description": "Your eyes have adapted to be able to see in the dark! At low light levels you will be granted night vision"
+}

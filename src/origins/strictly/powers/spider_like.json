@@ -1,0 +1,30 @@
+{
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "key": "key.jump",
+                "continuous": true
+            },
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:block_collision",
+                        "offset_x": 0.01,
+                        "offset_y": 0,
+                        "offset_z": 0.01
+                    },
+                    {
+                        "type": "origins:block_collision",
+                        "offset_x": -0.01,
+                        "offset_y": 0,
+                        "offset_z": -0.01
+                    }
+                ]
+            }
+        ]
+    },
+    "type": "origins:climbing",
+    "allow_holding": true
+}

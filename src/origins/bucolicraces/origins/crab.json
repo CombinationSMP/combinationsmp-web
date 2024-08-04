@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "bucolicraces:speed_modifiers/crabwalk",
+    "bucolicraces:status_effect_modifiers/fast",
+    "bucolicraces:diet_modifiers/pescatarian",
+    "bucolicraces:diet_modifiers/fishbuff",
+    "bucolicraces:size_modifiers/halfsize",
+    "bucolicraces:size_modifiers/crabwidth",
+    "bucolicraces:on-hit_modifiers/claws"
+  ],
+  "icon": "minecraft:seagrass",
+  "impact": 3,
+  "name": "Crab",
+  "description": "Life as a grab will be hard. I am not gonna lie."
+}

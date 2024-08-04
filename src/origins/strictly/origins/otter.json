@@ -1,0 +1,25 @@
+{
+        "powers": [
+                "origins:aqua_affinity",
+                "origins:aquatic",
+                "origins:wet_eyes",
+                "origins:swim_speed",
+                "origins:like_water",
+                "origins:more_exhasution",
+                "origins:no_shield",
+                "strictly:improved_lungs",
+                "strictly:aquatic_predator",
+                "strictly:otter_gods_blessing",
+                "strictly:otter_pouch",
+                "origins:claustrophobia",
+                "strictly:heart_reduction",
+                "strictly:mini_riptide",
+                "strictly:miniature_dwarf",
+                "strictly:land_slow",
+                "strictly:jump",
+                "strictly:step_height"
+        ],
+        "icon": "minecraft:spruce_planks",
+        "order": 10,
+        "impact": 3
+}

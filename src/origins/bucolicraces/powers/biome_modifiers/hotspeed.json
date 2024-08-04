@@ -1,0 +1,22 @@
+{
+    "type":"origins:stacking_status_effect",
+    "name": "Heated",
+    "description": "Hot biomes cause you to move faster!",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 80,
+    "effect": {
+      "effect": "minecraft:speed",
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": true
+    },
+"condition": {
+    "type": "origins:biome",
+    "condition": {
+        "type": "origins:temperature",
+        "comparison": ">=",
+        "compare_to": 1.25
+    }
+}
+}

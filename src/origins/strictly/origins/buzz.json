@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"strictly:stinger",
+		"strictly:bee_diet",
+		"strictly:bee_skin",
+		"strictly:freedom_calls",
+		"strictly:itty_bitty",
+		"strictly:nectar_processing",
+		"strictly:new_diet",
+		"strictly:smoke_sickness"
+	],
+	"icon": "minecraft:honey_bottle",
+	"order": 10,
+	"impact": 3
+}

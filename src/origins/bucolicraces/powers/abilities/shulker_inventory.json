@@ -1,0 +1,11 @@
+{
+  "type": "origins:inventory",
+  "title": "container.shulker_inventory_power",
+  "name": "Packrat Inventory",
+	"description": "You have access to a persistant storage by pressing your [PRIMARY] key! It keeps between deaths!",
+  "drop_on_death": false,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  }
+}

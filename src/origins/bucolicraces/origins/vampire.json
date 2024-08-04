@@ -1,0 +1,29 @@
+{
+  "powers": [
+    "bucolicraces:diet_modifiers/nohunger",
+    "bucolicraces:diet_modifiers/vampire/rightclickdrain",
+    "bucolicraces:diet_modifiers/vampire/blood_bottle",
+    "bucolicraces:diet_modifiers/vampire/blood_bucket1",
+    "bucolicraces:diet_modifiers/vampire/blood_bucket2",
+    "bucolicraces:diet_modifiers/vampire/blood_slime_balls",
+    "bucolicraces:diet_modifiers/blood",
+    "bucolicraces:entity_groups/undeadentity",
+    "bucolicraces:status_effect_modifiers/nightvision",
+    "bucolicraces:speed_modifiers/nightspeed",
+    "bucolicraces:status_effect_modifiers/dayweak",
+    "bucolicraces:status_effect_modifiers/shiftinvis",
+    "bucolicraces:ally_modifiers/vampirewolf",
+    "bucolicraces:status_effect_modifiers/holywater",
+    "bucolicraces:status_effect_modifiers/regen"
+    ],
+  "icon": "minecraft:potion",
+  "impact": 2,
+  "name": "Vampire",
+  "description": "You woke up from a haze remembering nothing, but your craving for blood"
+}
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+{
+    "type": "origins:modify_projectile_damage",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions":[{
+            "type": "origins:projectile",
+            "projectile": "minecraft:arrow"
+        }, {
+            "type": "origins:projectile",
+            "projectile": "minecraft:spectral_arrow"
+        }]
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5
+    },
+    "name": "Trained Marksman",
+    "description": "You deal more damage with a bow"
+}

@@ -1,0 +1,9 @@
+{
+    "type": "origins:prevent_elytra_flight",
+    "name": "You Can't Fly!",
+    "description":" ",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "tellraw @s {\"text\": \"You cant fly!\", \"color\": \"red\"}"
+    }
+}

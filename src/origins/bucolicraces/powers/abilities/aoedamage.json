@@ -1,0 +1,25 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:area_of_effect",
+        "radius": 32,
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:set_on_fire",
+                "duration": 5
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:can_see"
+        }
+    },
+    "cooldown": 4500 ,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 2
+	},
+	"name": "Burning Rage",
+	"description": "Set every entity on fire in a large radius"
+}

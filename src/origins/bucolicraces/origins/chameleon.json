@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/threequartersize",
+    "bucolicraces:biome_modifiers/coldfreeze",
+    "bucolicraces:biome_modifiers/hotspeed",
+    "bucolicraces:damage_taken_modifiers/poisonresist",
+    "bucolicraces:status_effect_modifiers/lightunderwaterbreathing",
+    "bucolicraces:status_effect_modifiers/shiftinvis"
+
+    ],
+  "icon": "minecraft:axolotl_bucket",
+  "impact": 1,
+  "name": "Chameleon",
+  "description": "You are a bipedal chameleon, you prefer to keep to warmer climates, because your cold-blooded nature relies on the warmth of the sun to regulate your temperature"
+}
+
+
+
+
+
+

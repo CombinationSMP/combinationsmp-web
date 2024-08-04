@@ -1,0 +1,25 @@
+{
+  "powers": [
+          "bucolicraces:status_effect_modifiers/dolphins",
+          "bucolicraces:status_effect_modifiers/water_regen",
+          "bucolicraces:status_effect_modifiers/water_breathing",
+          "bucolicraces:diet_modifiers/pescatarian",
+          "bucolicraces:diet_modifiers/fishbuff",
+          "bucolicraces:skin_modifiers/blue_skin",
+          "bucolicraces:skin_modifiers/drip",
+          "bucolicraces:zmisc_modifiers/dried_out",
+          "bucolicraces:damage_taken_modifiers/eternal_flame"
+          
+
+    ],
+  "icon": "minecraft:trident",
+  "impact": 2,
+  "name": "Atlantean",
+  "description": "Once, your home was bright and beautiful, but it is now lost to time. You must rebuild your home once more."
+}
+
+
+
+
+
+

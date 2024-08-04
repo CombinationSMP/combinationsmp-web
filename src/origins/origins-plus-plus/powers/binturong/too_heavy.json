@@ -1,0 +1,27 @@
+{
+	"type":"origins:restrict_armor",
+	"head":{
+		"type":"origins:ingredient",
+		"ingredient":{
+			"tag":"origins-plus-plus:heavy_armour"
+		}
+	},
+	"chest":{
+		"type":"origins:ingredient",
+		"ingredient":{
+			"tag":"origins-plus-plus:heavy_armour"
+		}
+	},
+	"legs":{
+		"type":"origins:ingredient",
+		"ingredient":{
+			"tag":"origins-plus-plus:heavy_armour"
+		}
+	},
+	"feet":{
+		"type":"origins:ingredient",
+		"ingredient":{
+			"tag":"origins-plus-plus:heavy_armour"
+		}
+	}
+}

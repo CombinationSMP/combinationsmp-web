@@ -1,0 +1,21 @@
+{
+  "powers": [
+      "bucolicraces:size_modifiers/threequartersize",
+      "bucolicraces:health_modifiers/sevenheart",
+      "bucolicraces:diet_modifiers/weak_stomach",
+      "bucolicraces:on-hit_modifiers/weak",
+      "bucolicraces:abilities/shulker_inventory",
+      "bucolicraces:status_effect_modifiers/fast"
+
+    ],
+  "icon": "minecraft:sponge",
+  "impact": 1,
+  "name": "Packrat",
+  "description": "You are a bipedal rat turned civilized, with extra inventory storage!"
+}
+
+
+
+
+
+

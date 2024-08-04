@@ -1,0 +1,25 @@
+{
+  "powers": [
+    "bucolicraces:status_effect_modifiers/nightvision",
+    "bucolicraces:diet_modifiers/rottenbuff",
+    "bucolicraces:diet_modifiers/rottendiet",
+    "bucolicraces:diet_modifiers/ghoul/blood_bottle",
+    "bucolicraces:diet_modifiers/ghoul/blood_bucket1",
+    "bucolicraces:diet_modifiers/ghoul/blood_bucket2",
+    "bucolicraces:diet_modifiers/ghoul/blood_slime_balls",
+    "bucolicraces:size_modifiers/threequartersize",
+    "bucolicraces:status_effect_modifiers/weakeyes",
+    "bucolicraces:damage_taken_modifiers/poisonresist",
+    "bucolicraces:status_effect_modifiers/fast",
+    "bucolicraces:on-hit_modifiers/claws",
+    "bucolicraces:damage_taken_modifiers/flamable",
+    "bucolicraces:ally_modifiers/trading",
+    "bucolicraces:ally_modifiers/irongolemmad"
+
+    
+  ],
+  "icon": "minecraft:rotten_flesh",
+  "impact": 2,
+  "name": "Ghoul",
+  "description": "You committed a deep, horrific act in your human life, and are cursed to walk in darkness for eternity. You are consumed by your hunger for flesh"
+}

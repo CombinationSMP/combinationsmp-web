@@ -1,0 +1,18 @@
+{
+    "type": "origins:recipe",
+    "name": "Repopulate",
+    "description": "Craft mycelium with only one grass block",
+    "recipe": {
+        "id": "origins:cheap_beetroot",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "minecraft:grass_block"
+            }
+        ],
+        "result": {
+            "item": "minecraft:mycelium",
+            "count": 1
+        }
+    }
+}

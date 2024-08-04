@@ -1,0 +1,11 @@
+{
+    "type": "origins:modify_falling",
+    "name": "Slow Falling",
+    "description": "Slow fall unless you are sneaking",
+    "velocity": 0.02,
+    "take_fall_damage": false,
+    "condition": {
+        "type": "origins:sneaking",
+        "inverted":true
+    }
+}

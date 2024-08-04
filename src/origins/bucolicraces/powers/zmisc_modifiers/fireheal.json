@@ -1,0 +1,13 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Heat Dependent",
+    "description": "You depend on fire for your source of healing",
+    "entity_action": {
+        "type": "origins:heal",
+        "amount": 3
+    },
+    "interval":40,
+    "condition": {
+        "type": "origins:on_fire"
+    }
+}

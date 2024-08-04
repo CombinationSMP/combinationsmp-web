@@ -1,0 +1,23 @@
+{
+    "type": "origins:conditioned_attribute",
+    "name": "Night Hunter",
+    "description": "At night you deal increased damage",
+    "modifier": {
+      "operation": "addition",
+      "value": 2,
+      "name": "ATK Increase",
+      "attribute": "generic.attack_damage"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+        },
+        {
+          "type": "origins:exposed_to_sky"
+        }
+      ]
+    }
+  }

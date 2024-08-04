@@ -1,0 +1,17 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "name": "Extra Reach block reach",
+      "attribute": "forge:reach_distance",
+      "value": 1.5,
+      "operation": "addition"
+    },
+    {
+      "name": "Extra Reach attack reach",
+      "attribute": "forge:attack_range",
+      "value": 1.5,
+      "operation": "addition"
+    }
+  ]
+}

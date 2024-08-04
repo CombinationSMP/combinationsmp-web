@@ -1,0 +1,22 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/twoandahalfblockstall",
+    "bucolicraces:jumping_modifiers/threetalljump",
+    "bucolicraces:speed_modifiers/threetallspeed",
+    "bucolicraces:diet_modifiers/weak_stomach",
+    "bucolicraces:size_modifiers/elfwidth",
+    "bucolicraces:skills/careful",
+    "bucolicraces:skills/infinitearrows",
+    "bucolicraces:on-hit_modifiers/bowdamage"
+    ],
+  "icon": "minecraft:spectral_arrow",
+  "impact": 1,
+  "name": "Elf",
+  "description": "Tall, slim, and an expert with a bow!  "
+}
+
+
+
+
+
+

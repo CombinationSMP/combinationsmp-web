@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "strictly:poison_ivy_vines",
+        "strictly:plant_caretaker",
+        "strictly:regrowth",
+        "strictly:flammable",
+        "strictly:light_deprivation",
+        "strictly:blissful_light"
+    ],
+    "icon": {
+        "item": "fern"
+    },
+    "impact": 1
+}

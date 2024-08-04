@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_xp_gain",
+    "name": "Dull",
+    "description": "You are an idiot.. so your experience gain is lowered",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.5
+    }
+}

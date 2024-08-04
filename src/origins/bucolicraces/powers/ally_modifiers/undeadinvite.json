@@ -1,0 +1,48 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 40,
+	"entity_action": {
+		"type": "origins:and",
+		"actions":
+		[	
+			{
+				"type": "origins:execute_command",
+				"command": "team join Zombie @e[type=minecraft:zombie]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Zombie @e[type=minecraft:zombified_piglin]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Zombie @e[type=minecraft:skeleton]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Zombie @e[type=minecraft:husk]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Zombie @e[type=minecraft:drowned]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Zombie @e[type=minecraft:zombie_villager]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Zombie @e[type=minecraft:wither_skeleton]",
+				"permission_level": 4
+			}
+		]
+	},
+
+	"name": "Undead",
+	"description": "The undead will not attack you"
+}

@@ -1,0 +1,18 @@
+{
+    "type": "origins:recipe",
+    "name": "Nutrient Extraction",
+    "description": "Craft bonemeal with dirt in a crafting grid!",
+    "recipe": {
+        "id": "origins:cheap_bone_meal",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "minecraft:dirt"
+            }
+        ],
+        "result": {
+            "item": "minecraft:bone_meal",
+            "count": 2
+        }
+    }
+}

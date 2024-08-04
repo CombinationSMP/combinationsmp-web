@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/threequartersize",
+    "bucolicraces:health_modifiers/sevenheart",
+    "bucolicraces:ally_modifiers/villagerdiscountbetter",
+    "bucolicraces:ally_modifiers/scarecreepers",
+    "bucolicraces:diet_modifiers/pescatarian",
+    "origins:scare_creepers",
+    "bucolicraces:abilities/dash",
+    "bucolicraces:fall_modifiers/restrictfall",
+    "bucolicraces:zmisc_modifiers/elytraprevent",
+    "bucolicraces:ally_modifiers/wolfhunt"
+    ],
+  "icon": "minecraft:light_gray_wool",
+  "impact": 2,
+  "name": "Tabby Born",
+  "description": "Meow! Meow! Meow! [You are an anthropormorphic cat!]"
+}
+
+
+
+
+
+

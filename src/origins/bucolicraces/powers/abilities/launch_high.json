@@ -1,0 +1,12 @@
+{
+    "type": "origins:launch",
+    "cooldown": 1200,
+    "hud_render": {
+        "should_render":false
+    },
+    "speed": 3.5,
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "hidden":true
+}

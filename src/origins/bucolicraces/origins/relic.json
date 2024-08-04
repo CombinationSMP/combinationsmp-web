@@ -1,0 +1,26 @@
+{
+  "powers": [
+    "bucolicraces:damage_taken_modifiers/fire_immunity",
+    "bucolicraces:damage_taken_modifiers/poisonresist",
+    "bucolicraces:abilities/statue",
+    "bucolicraces:diet_modifiers/relic/brick",
+    "bucolicraces:diet_modifiers/relic/clay",
+    "bucolicraces:diet_modifiers/relic/netherbrick",
+    "bucolicraces:diet_modifiers/relic/scortchedbrick",
+    "bucolicraces:diet_modifiers/relic/ashbrick",
+    "bucolicraces:diet_modifiers/relic/searedbrick",
+    "bucolicraces:diet_modifiers/claydiet",
+    "bucolicraces:status_effect_modifiers/sinking",
+    "bucolicraces:damage_taken_modifiers/drown"
+    ],
+  "icon": "minecraft:stone_bricks",
+  "impact": 3,
+  "name": "Living Relic",
+  "description": "You don't know where you came from or why you are here. You just know you crave clay and bricks."
+}
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+{
+    "type": "origins:prevent_item_use",
+    "name": "Of The Ice And Cold",
+    "description": "Your diet is fish and berries",
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "tag": "bucolicraces:coldbiomediet"
+              }
+            }
+          ],
+          "inverted": true
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "bucolicraces:food"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "bucolicraces:ignore_diet"
+          },
+          "inverted": true
+        }
+      ]
+    }
+  }

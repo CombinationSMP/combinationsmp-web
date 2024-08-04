@@ -1,0 +1,35 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "Nectarivore",
+  "description": "You can only eat forms of nectar",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "bucolicraces:nectar"
+            }
+          }
+        ],
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:food"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:ignore_diet"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

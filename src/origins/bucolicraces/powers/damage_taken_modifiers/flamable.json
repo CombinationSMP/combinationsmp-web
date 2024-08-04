@@ -1,0 +1,14 @@
+
+  {
+    "name": "Flammable",
+    "description": "Due to your build, you take more fire damage",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:fire"
+    },
+    "modifier": {
+      "name": "Additional_damage_taken_while_on_fire",
+      "value": 3,
+      "operation": "addition"
+    }
+  }

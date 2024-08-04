@@ -1,0 +1,10 @@
+{
+	"type":"origins:status_bar_texture",
+	"texture":"origins-plus-plus:textures/gui/hide_hearts.png",
+	"condition":{
+		"type":"origins:resource",
+		"resource":"origins-plus-plus:emblazing-warrior/fury_bar",
+		"compare_to":3,
+		"comparison":"=="
+	}
+}

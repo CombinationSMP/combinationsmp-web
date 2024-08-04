@@ -1,0 +1,28 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "minecraft:experience_bottle",
+                    "amount": 7
+                }
+            },
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "minecraft:lapis_lazuli",
+                    "amount": 10
+                }
+            },
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "relics:holy_locket"
+                }
+            }
+        ]
+    }
+}

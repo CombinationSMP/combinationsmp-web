@@ -1,0 +1,21 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:iron_golem",
+    "cooldown": 10000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 24
+    },
+    "name": "Summon Iron Golem",
+    "description": "You summon an iron friend to help you!",
+    "count": 1,
+    "interval": 5,
+    "sound": "minecraft:entity.llama.spit",
+    "speed": 1.5,
+    "divergence": 7,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

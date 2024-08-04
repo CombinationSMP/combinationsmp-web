@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": 10
+    },
+  
+    "name": "Hefty",
+    "description": "You have a hefty constitution and have 15 hearts!"
+  }

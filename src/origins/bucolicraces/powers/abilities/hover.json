@@ -1,0 +1,137 @@
+{
+    "name": "Hover",
+    "description": "Hold [JUMP] to hover when falling. Toggle with [PRIMARY].",
+    "type": "origins:multiple",
+    "timer":
+    {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 100,
+        "hud_render":
+        {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 5,
+            "condition":
+            {
+                "type": "origins:power_active",
+                "power": "*:*_toggled"
+            }
+        }
+    },
+    "recharge":
+    {
+        "condition":
+        {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action":
+        {
+            "type": "origins:change_resource",
+            "resource": "*:*_timer",
+            "change": 2,
+            "operation": "add"
+        }
+    },
+    "cooldown":
+    {
+        "type": "origins:cooldown",
+        "cooldown": 20,
+        "hud_render":
+        {
+            "should_render": false
+        }
+    },
+    "toggled":
+    {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key":
+        {
+            "key": "key.origins.primary_active"
+        },
+        "retain_state": true
+    },
+    "hold":
+    {
+        "condition":
+        {
+            "type": "origins:and",
+            "conditions":
+			[
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggled"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer",
+                    "comparison": "!=",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:or",
+                    "conditions":
+                    [
+                        {
+                            "type": "origins:fall_distance",
+                            "comparison": ">",
+                            "compare_to": 0
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "*:*_cooldown",
+                            "comparison": "!=",
+                            "compare_to": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action":
+        {
+            "type": "origins:and",
+            "actions":
+			[
+                {
+                    "type": "origins:apply_effect",
+                    "effect":
+                    {
+                        "effect": "levitation",
+                        "duration": 2,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_timer",
+                    "change": -1,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:*_cooldown"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render":
+        {
+            "should_render": false
+        },
+        "key":
+        {
+            "key": "key.jump",
+            "continuous": true
+        }
+    }
+}

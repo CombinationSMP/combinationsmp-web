@@ -1,0 +1,11 @@
+{
+    "type": "origins:disable_regen",
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water",
+        "inverted": true
+    },
+
+    "name": "Dry Skin",
+    "description": "You are accustomed to your habbitat in the water! No natural regen outside of water!"
+}

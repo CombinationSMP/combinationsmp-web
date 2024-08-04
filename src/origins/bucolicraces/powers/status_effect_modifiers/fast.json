@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "name": "Speedy",
+    "description": "You are 30% faster then the average joe!",
+    "modifier": {
+      "name": "Tailwind speed bonus",
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.30,
+      "operation": "multiply_base"
+    }
+  }

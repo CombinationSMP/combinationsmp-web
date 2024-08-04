@@ -1,0 +1,160 @@
+{
+    "type": "origins:multiple",
+    "name": "Adaptive Size",
+    "description": "Your size is dependent on the amount of hunger you currently have!",
+    "largest": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 1"
+                }
+            ]
+        },
+            "condition": {
+                "type": "origins:food_level",
+                "comparison": ">=",
+                "compare_to": 16
+            
+        }
+    },
+    "average": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.75"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.75"
+                }
+            ]
+        },
+        "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:food_level",
+                        "comparison": "<",
+                        "compare_to": 16
+                    },
+                {
+                        "type": "origins:food_level",
+                        "comparison": ">=",
+                        "compare_to": 12
+                    }
+                ]
+            
+        }
+    },
+    "threequarters": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.5"
+                }
+            ]
+        },
+        "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:food_level",
+                        "comparison": "<",
+                        "compare_to": 12
+                    },
+                {
+                        "type": "origins:food_level",
+                        "comparison": ">=",
+                        "compare_to": 8
+                    }
+                ]
+            
+        }
+    },
+    "oneblock": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.25"
+                }
+            ]
+        },
+        "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:food_level",
+                        "comparison": "<",
+                        "compare_to": 8
+                    },
+                {
+                        "type": "origins:food_level",
+                        "comparison": ">=",
+                        "compare_to": 4
+                    }
+                ]
+            
+        }
+    },
+    "halfblock": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.125"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.125"
+                }
+            ]
+        },
+        "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:food_level",
+                        "comparison": "<",
+                        "compare_to": 4
+                    },
+                {
+                        "type": "origins:food_level",
+                        "comparison": ">=",
+                        "compare_to": 0
+                    }
+                ]
+            
+        }
+    }
+}

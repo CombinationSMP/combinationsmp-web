@@ -1,0 +1,23 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Name",
+    "description": "Description",
+    "hidden": true,
+    "interval": 10,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "particle minecraft:end_rod ~ ~ ~ .5 .5 .5 0.0000000001 1 normal @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "particle minecraft:electric_spark_particle ~ ~ ~ -.5 -.5 -.5 .01 5 normal"
+            }
+        ]
+    }
+
+}

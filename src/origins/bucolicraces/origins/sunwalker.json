@@ -1,0 +1,12 @@
+{
+    "powers": [
+        "bucolicraces:zmisc_modifiers/daywalker",
+        "bucolicraces:zmisc_modifiers/nosleep",
+        "bucolicraces:damage_taken_modifiers/fire_immunity",
+        "bucolicraces:size_modifiers/reset"
+    ],
+    "icon": "minecraft:yellow_glazed_terracotta",
+    "impact": 3,
+    "name": "Sun Walker",
+    "description": "Born from a drop of sunlight, you derive all of your power form the suns rays!"
+}

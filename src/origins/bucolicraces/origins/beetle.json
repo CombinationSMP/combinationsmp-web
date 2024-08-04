@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/quartersize",
+    "bucolicraces:speed_modifiers/quartertallflight",
+    "bucolicraces:health_modifiers/fiveheart",
+    "bucolicraces:skills/elytra",
+    "bucolicraces:diet_modifiers/rawbuff",
+    "bucolicraces:recipes/dirt",
+    "bucolicraces:speed_modifiers/slow",
+    "bucolicraces:armor_modifiers/leather",
+    "bucolicraces:armor_modifiers/beetle_armor"
+
+  ],
+  "icon": "minecraft:dirt",
+  "impact": 2,
+  "name": "Beetle",
+  "description": "A small beetle that is a crucial decomposer!"
+}

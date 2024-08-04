@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "name": "Slow",
+  "description":"You move 20% slower then the average joe",
+  "modifier": {
+    "name": "Tailwind speed bonus",
+    "attribute": "minecraft:generic.movement_speed",
+    "value": -0.2,
+    "operation": "multiply_base"
+  }
+}

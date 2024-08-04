@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/quartersize",
+    "bucolicraces:abilities/gunling/gunpowder",
+    "bucolicraces:abilities/gunling/gunfuel",
+    "bucolicraces:abilities/gunling/gunshot",
+    "bucolicraces:abilities/gunling/iron",
+    "bucolicraces:abilities/gunling/ironfuel",
+    "bucolicraces:ally_modifiers/trading",
+    "bucolicraces:diet_modifiers/dietnone",
+    "bucolicraces:ally_modifiers/irongolemmad",
+    "bucolicraces:status_effect_modifiers/sinking",
+    "bucolicraces:damage_taken_modifiers/drown",
+    "bucolicraces:diet_modifiers/nohunger"
+
+  ],
+  "icon": "minecraft:gunpowder",
+  "impact": 2,
+  "name": "Gunling",
+  "description": "A sentient gun that can shoot out of their face"
+}

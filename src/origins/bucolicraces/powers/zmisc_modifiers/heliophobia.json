@@ -1,0 +1,27 @@
+{
+  "type": "origins:burn",
+  "interval": 20,
+  "name": "Heliophobia",
+  "description":"You burn in the sunlight! Might be time for a hat!",
+  "burn_duration": 1,
+  "condition": {
+    "type":"origins:and",
+    "conditions": [
+      {
+        "type": "origins:exposed_to_sun"
+      },
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "head",
+        "item_condition": {
+            "type": "origins:empty"
+                          }
+      
+      },
+      {
+        "type": "origins:invisible",
+        "inverted": true
+      }
+    ]
+  }
+}

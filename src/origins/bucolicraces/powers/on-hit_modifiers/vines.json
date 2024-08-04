@@ -1,0 +1,14 @@
+{
+	"type": "origins:target_action_on_hit",
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": { 
+			"effect": "minecraft:slowness",
+			"amplifier": 6,
+			"duration": 60
+		}
+	},	
+	"cooldown": 150,
+	"name": "Tangling Vines",
+	"description": "When you hit someone you slow them with tangling vines"
+}

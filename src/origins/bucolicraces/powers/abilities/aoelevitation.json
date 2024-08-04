@@ -1,0 +1,43 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:area_of_effect",
+                "radius": 32,
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:levitation",
+                            "duration": 35,
+                            "amplifier": 18
+                        }
+                    }
+                }
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.vex.ambient",
+                "volume": 1.3
+            }
+        ]
+    },
+    "bientity_condition": {
+        "type": "origins:can_see"
+    },
+    "cooldown": 2200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 5
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    },
+    "name": "Levitation",
+    "description": "Shoot every entity into the air that is near you using your [SECONDARY] skill button"
+}

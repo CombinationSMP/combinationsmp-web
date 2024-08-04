@@ -1,0 +1,21 @@
+{
+  "type": "origins:action_on_wake_up",
+  "name": "Shedding",
+  "description":"Every morning when you wake up you shed a bit of wool!",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:give",
+        "stack": {
+          "item": "minecraft:white_wool",
+          "amount":16
+        }
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.sheep.shear"
+      }
+    ]
+  }
+}

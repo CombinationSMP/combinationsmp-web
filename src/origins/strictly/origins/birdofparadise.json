@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"strictly:winged",
+		"strictly:angelicgrace",
+		"origins:aerial_combatant",
+		"origins:tailwind",
+		"strictly:wet_wings",
+		"origins:launch",
+		"strictly:windsblessing"
+	],
+	"icon": "minecraft:light_blue_dye",
+	"order": 6,
+	"impact": 2
+}

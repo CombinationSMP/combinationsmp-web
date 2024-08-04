@@ -1,0 +1,22 @@
+{
+  "powers": [
+      "bucolicraces:size_modifiers/threequartersize",
+      "bucolicraces:health_modifiers/sevenheart",
+      "bucolicraces:diet_modifiers/rawbuff",
+      "bucolicraces:diet_modifiers/rawdiet",
+      "bucolicraces:skills/climbing",
+      "bucolicraces:abilities/side_step",
+      "bucolicraces:on-hit_modifiers/weak"
+
+    ],
+  "icon": "minecraft:cobblestone",
+  "impact": 1,
+  "name": "Raccoon",
+  "description": "You are a bipedal racoon that thinks you are better then everyone else but you really arn't"
+}
+
+
+
+
+
+

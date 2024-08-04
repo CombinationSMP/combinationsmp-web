@@ -1,0 +1,27 @@
+{
+    "type": "origins:modify_damage_taken",
+    "name": "Ferrumphobia",
+    "description": "As a fae you are weak to iron! Be careful.",
+
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag":"bucolicraces:iron_items"
+                }
+
+            }
+        }
+    },
+    "modifier": {
+        "name": "Ferrumphobia",
+        "operation": "addition",
+        "value":8 ,
+        "inverted":true 
+    }
+   
+}

@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "bucolicraces:ally_modifiers/villagerdiscountamazing",
+    "bucolicraces:abilities/golemshot",
+    "bucolicraces:status_effect_modifiers/afraidofdark",
+    "bucolicraces:damage_taken_modifiers/zombieillager"
+  ],
+  "icon": "minecraft:emerald",
+  "impact": 2,
+  "name": "Villager",
+  "description": "Hmm... hmm... hmmm... HMMMMMMMMMMM... Hmmm"
+}
+
+
+
+
+
+

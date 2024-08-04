@@ -1,0 +1,77 @@
+{
+	"type": "origins:modify_food",
+	"item_condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+			"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:rotten_flesh"
+				}
+			},
+			{
+			"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:spider_eye"
+				}
+			},
+			{
+			"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:chicken"
+				}
+			},
+			{
+			"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:pufferfish"
+				}
+			},
+			{
+			"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:poisonous_potato"
+				}
+			},
+			{
+			"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:suspicious_stew"
+				}
+			}
+		]
+	},
+	"entity_action":{
+		"type": "origins:delay",
+		"ticks": 1,
+		"action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type":"origins:clear_effect",
+					"effect": "minecraft:hunger"
+				},
+				{
+					"type":"origins:clear_effect",
+					"effect": "minecraft:poison"
+				},
+				{
+					"type":"origins:clear_effect",
+					"effect": "minecraft:weakness"
+				},
+				{
+					"type":"origins:clear_effect",
+				"effect": "minecraft:wither"
+				},
+				{
+					"type":"origins:clear_effect",
+					"effect": "minecraft:nausea"
+				},
+				{
+					"type":"origins:clear_effect",
+					"effect": "minecraft:blindness"
+				}
+			]
+		}
+	}
+}

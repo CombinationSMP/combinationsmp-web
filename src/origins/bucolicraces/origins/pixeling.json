@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "bucolicraces:speed_modifiers/quartertallflight",
+    "bucolicraces:health_modifiers/threeheart",
+    "bucolicraces:size_modifiers/micro",
+    "bucolicraces:zmisc_modifiers/pixeling_hold/sugar",
+    "bucolicraces:zmisc_modifiers/pixeling_hold/feather",
+    "bucolicraces:zmisc_modifiers/pixeling_hold/rocket",
+    "bucolicraces:zmisc_modifiers/pixeling_hold/string",
+    "bucolicraces:fall_modifiers/microfall",
+    "bucolicraces:diet_modifiers/miniscule",
+    "bucolicraces:biome_modifiers/nocold",
+    "bucolicraces:skills/climbing",
+    "bucolicraces:on-hit_modifiers/weak"
+
+  ],
+  "icon": "minecraft:spyglass",
+  "impact": 2,
+  "name": "Pixeling",
+  "description": "A microscoping being that can be incredibly resourceful"
+}

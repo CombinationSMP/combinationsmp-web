@@ -1,0 +1,21 @@
+{
+    "type": "origins:fire_projectile",
+    "name":"Ignite",
+    "description":"Fire three blazing projectiles to set your enemies on fire",
+    "entity_type": "minecraft:fireball",
+    "cooldown": 300,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 7
+    },
+    "count": 3,
+    "interval": 7,
+    "sound": "minecraft:entity.blaze.shoot",
+    "speed": 1.5,
+    "divergence": 7,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

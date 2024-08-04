@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_xp_gain",
+    "name": "Smart",
+    "description": "Your experience gain is greatly increased",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1.5
+    }
+}

@@ -1,0 +1,5 @@
+{
+	"type": "origins:prevent_sleep",
+        "message": "What you know will kill you, but you will die laughing.",
+        "set_spawn_point": true
+} 

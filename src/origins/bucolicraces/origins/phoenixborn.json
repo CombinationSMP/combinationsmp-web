@@ -1,0 +1,22 @@
+{
+	"powers": [
+		"bucolicraces:status_effect_modifiers/belowmypaygrade",
+		"bucolicraces:abilities/birdlaunch",
+		"bucolicraces:abilities/launch_high",
+		"bucolicraces:abilities/flameofhope",
+		"bucolicraces:skills/elytra",
+		"bucolicraces:abilities/rebirth",
+		"bucolicraces:damage_taken_modifiers/wick_water_vulnerability",
+      	"bucolicraces:status_effect_modifiers/regen",
+    	"bucolicraces:zmisc_modifiers/fireheal",
+    	"bucolicraces:damage_taken_modifiers/fire_immunity",
+		"bucolicraces:abilities/flameofhope",
+		"bucolicraces:diet_modifiers/giantdiet",
+		"bucolicraces:ally_modifiers/passive",
+		"bucolicraces:damage_taken_modifiers/water_vulnerability"
+	],
+	"icon": "minecraft:blaze_spawn_egg",
+	"impact": 3,
+	"name": "Phoenix",
+	"description": "You are a Noble Phoenix, a creature of fire and life."
+}

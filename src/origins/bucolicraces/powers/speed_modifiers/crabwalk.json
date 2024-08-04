@@ -1,0 +1,21 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:slowness",
+            "duration": 5,
+            "amplifier": 4
+        }
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.forward",
+        "continuous": true
+    },
+    "name": "Crab Walk",
+    "description": "You can't walk forward!"
+}

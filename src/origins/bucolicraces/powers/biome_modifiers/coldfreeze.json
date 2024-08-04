@@ -1,0 +1,25 @@
+{
+    "type": "origins:freeze",
+    "name": "Cold Blooded",
+    "description": "You freeze in cold biomes",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "<=",
+                    "compare_to": 0
+                }
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:precipitation",
+                    "precipitation": "snow"
+                }
+            }
+        ]
+    }
+}

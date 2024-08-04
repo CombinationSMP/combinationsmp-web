@@ -1,0 +1,57 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:area_of_effect",
+                "radius": 32,
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effects": [
+                            {
+                                "effect": "minecraft:blindness",
+                                "duration": 200,
+                                "show_particles": false,
+                                "amplifier": 0
+                            },
+                            {
+                                "effect": "minecraft:slowness",
+                                "duration": 100,
+                                "show_particles": false,
+                                "amplifier": 9
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "bucolicraces:abilities/automaton/overheat",
+                "operation": "add",
+                "change": 15
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.vex.death"
+            }
+        ]
+    },
+    "bientity_condition": {
+        "type": "origins:can_see"
+    },
+    "cooldown": 220,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 3
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    },
+    "name": "Flashbang",
+    "description": "Stun everyone in a large radius around you!"
+}

@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/dwarfwidth",
+    "bucolicraces:armor_modifiers/iron",
+    "bucolicraces:damage_taken_modifiers/poisonresist",
+    "bucolicraces:status_effect_modifiers/haste",
+    "bucolicraces:status_effect_modifiers/undergrounder",
+    "bucolicraces:speed_modifiers/dwarfspeed",
+    "bucolicraces:on-hit_modifiers/axedamage",
+    "bucolicraces:zmisc_modifiers/deepsleep"
+  ],
+  "icon": "minecraft:iron_pickaxe",
+  "impact": 1,
+  "name": "Dwarf",
+  "description": "Originally from the Fae Wild, Dwarfs are a short and resilient people who excel in digging"
+}

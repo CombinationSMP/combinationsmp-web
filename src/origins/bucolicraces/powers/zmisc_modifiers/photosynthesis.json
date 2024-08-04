@@ -1,0 +1,15 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Photosynthesis",
+    "description": "The sun feeds you!",
+    "interval": 240,
+    "entity_action": {
+        "type": "origins:feed",
+         "food": 2,
+         "saturation": 2
+    },
+    
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    }
+}

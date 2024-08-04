@@ -1,0 +1,13 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "name":"Puny Beings",
+    "description": "Killing passive creatures is below you. You are here for a hunt!",
+    "target_condition": {
+        "type": "origins:in_tag",
+        "tag": "bucolicraces:passive"
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -1
+    }
+}

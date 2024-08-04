@@ -1,0 +1,43 @@
+
+{
+    "type": "origins:active_self",
+	"name": "Take Root",
+	"description": "Lose your ability to move and gain regeneration! Only usable on blocks you can plant stuff on!",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:regeneration",
+                    "duration": 250,
+                    "amplifier": 1,
+                    "is_ambient": true,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            },
+			{
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slowness",
+                    "duration": 150,
+                    "amplifier": 9,
+                    "is_ambient": true,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            }
+        ]
+    },
+    "cooldown": 250,
+    "hud_render": {
+        "should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 8
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    }
+}

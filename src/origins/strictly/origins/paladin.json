@@ -1,0 +1,15 @@
+{
+	"powers": [
+                "strictly:holy_fire",
+                "strictly:dried_out",
+                "strictly:leech",
+                "strictly:well_built",
+                "strictly:durendal",
+                "strictly:skilled_swordsman_1",
+                "strictly:book",
+                "strictly:praise_the_sun"
+	],
+	"icon": "strictly_origins:durendal",
+	"impact": 2,
+        "order": 1
+}

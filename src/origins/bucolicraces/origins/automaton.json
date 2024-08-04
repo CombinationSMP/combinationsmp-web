@@ -1,0 +1,30 @@
+{
+  "powers": [
+    "bucolicraces:abilities/automaton/laser",
+    "bucolicraces:abilities/automaton/flashbang",
+    "bucolicraces:abilities/automaton/overheat",
+    "bucolicraces:abilities/automaton/overheattick",
+    "bucolicraces:zmisc_modifiers/drillhand",
+    "bucolicraces:zmisc_modifiers/nosleep",
+    "bucolicraces:diet_modifiers/irongolem/ironnugget",
+    "bucolicraces:diet_modifiers/irongolem/rawiron",
+    "bucolicraces:diet_modifiers/irongolem/ironingot",
+    "bucolicraces:diet_modifiers/irongolem/crushed_iron_ore",
+    "bucolicraces:diet_modifiers/irongolem/iron_sheet",
+    "bucolicraces:diet_modifiers/irongolem/metal_bar",
+    "bucolicraces:diet_modifiers/irondiet",
+    "bucolicraces:diet_modifiers/nohunger",
+    "bucolicraces:status_effect_modifiers/regen",
+    "bucolicraces:status_effect_modifiers/sinking"
+    ],
+  "icon": "minecraft:redstone",
+  "impact": 2,
+  "name": "Automaton",
+  "description": "You were hand crafted by another with no will of your own, designed to defend and protect. Having broken free from the shackles that once held you to your maker, you've learned there is a vast world to experience"
+}
+
+
+
+
+
+

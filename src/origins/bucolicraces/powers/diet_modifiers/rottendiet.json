@@ -1,0 +1,35 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "Rotten",
+  "description": "Your craving for rotten meat is insatiable",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "bucolicraces:rotten"
+            }
+          }
+        ],
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:food"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:ignore_diet"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

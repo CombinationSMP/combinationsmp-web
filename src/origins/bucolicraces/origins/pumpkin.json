@@ -1,0 +1,27 @@
+{
+  "powers": [
+    "bucolicraces:abilities/pumpkin",
+    "bucolicraces:zmisc_modifiers/dull",
+    "bucolicraces:status_effect_modifiers/regen",
+    "bucolicraces:zmisc_modifiers/photosynthesis",
+    "bucolicraces:diet_modifiers/honeydiet",
+    "bucolicraces:diet_modifiers/honeybuff",
+    "bucolicraces:ally_modifiers/endermanteam",
+    "bucolicraces:ally_modifiers/endermanteaminvite",
+    "bucolicraces:size_modifiers/threequartersize",
+    "bucolicraces:health_modifiers/sevenheart",
+    "bucolicraces:status_effect_modifiers/melonhate",
+    "bucolicraces:abilities/harden"
+
+    ],
+  "icon": "minecraft:carved_pumpkin",
+  "impact": 2,
+  "name": "Pumpkin",
+  "description": "Born with a hollow head, you know nothing but your hatred for melon"
+}
+
+
+
+
+
+

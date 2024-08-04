@@ -1,0 +1,16 @@
+{
+            "type": "origins:conditioned_attribute",
+            "name": "Holy Weakness",
+            "description": "When in the overworld deal less damage due to your desire to preserve life",
+            "modifier": {
+              "operation": "addition",
+              "value":-4,
+              "name": "ATK Increase",
+              "attribute": "generic.attack_damage"
+            },
+          "condition":{
+                "type": "origins:dimension",
+                "dimension": "minecraft:overworld"
+                     }
+
+}

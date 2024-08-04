@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_exhaustion",
+  "name": "Miniscule Diet",
+  "description": "You go through almost no food",
+  "modifier": {
+    "name": "Extra exhaustion from large appetite",
+    "value": 0.05,
+    "operation": "multiply_base"
+  }
+}

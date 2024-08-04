@@ -1,0 +1,14 @@
+{
+    "type": "origins:modify_slipperiness",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 0.6
+    },
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "bucolicraces:ice",
+        "inverted": true
+    },
+    "name": "Slippery",
+    "description": "you slip on anything that isnt sand!"
+}

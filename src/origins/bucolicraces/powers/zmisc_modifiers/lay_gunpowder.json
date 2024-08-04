@@ -1,0 +1,21 @@
+{
+  "type": "origins:action_on_wake_up",
+  "name": "Lay Gunpowder",
+  "description": "Where did this come from...?",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:give",
+        "stack": {
+          "item": "minecraft:gunpowder",
+          "amount":4
+        }
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.chicken.egg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+
+{
+    "type":"origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 120,
+    "tick_rate": 120,
+    "effect": {
+      "effect": "minecraft:regeneration",
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": true
+    },
+    "condition": {
+        "type": "origins:health",
+        "comparison": "<",
+        "compare_to": 6
+    },
+  
+    "name": "Healing Magic",
+    "description": "Gives you a lesser passive regeneration due to your fae healing magic!"
+  }

@@ -1,0 +1,35 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "Edge of Existence",
+  "description": "The only things that can sustain you any longer are bones and phantom membranes!",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "bucolicraces:nectar"
+            }
+          }
+        ],
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:food"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "bucolicraces:ignore_diet"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

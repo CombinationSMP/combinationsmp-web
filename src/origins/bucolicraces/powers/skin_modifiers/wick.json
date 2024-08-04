@@ -1,0 +1,109 @@
+{
+    "type": "origins:multiple",
+    "hidden":true,
+    "largest": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "/particle minecraft:flame ~ ~2.05 ~ 0.0000001 0.00001 0.000001 0.0000000001 2 normal @s"
+        },
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": ">=",
+            "compare_to": 16
+        }
+    },
+    "average": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "/particle minecraft:flame ~ ~1.55 ~ 0.0000001 0.00001 0.000001 0.0000000001 2 normal @s"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 16
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">=",
+                    "compare_to": 12
+                }
+            ]
+        }
+    },
+    "threequarters": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "/particle minecraft:flame ~ ~1.05 ~ 0.0000001 0.00001 0.000001 0.0000000001 2 normal @s"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 12
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">=",
+                    "compare_to": 8
+                }
+            ]
+        }
+    },
+    "oneblock": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "/particle minecraft:flame ~ ~0.65 ~ 0.0000001 0.00001 0.000001 0.0000000001 2 normal @s"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 8
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">=",
+                    "compare_to": 4
+                }
+            ]
+        }
+    },
+    "halfblock": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "/particle minecraft:flame ~ ~0.45 ~ 0.0000001 0.00001 0.000001 0.0000000001 2 normal @s"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 4
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">=",
+                    "compare_to": 0
+                }
+            ]
+        }
+    }
+}

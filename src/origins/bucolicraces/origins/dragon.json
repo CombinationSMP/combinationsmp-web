@@ -1,0 +1,23 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/threeblockstall",
+    "bucolicraces:jumping_modifiers/threetalljump",
+    "bucolicraces:speed_modifiers/threetallspeed",
+    "bucolicraces:skills/greater_wings",
+    "bucolicraces:damage_taken_modifiers/fire_immunity",
+    "bucolicraces:ally_modifiers/trading",
+    "bucolicraces:diet_modifiers/weak_stomach",
+    "bucolicraces:abilities/dragonbreath",
+    "bucolicraces:status_effect_modifiers/abovemypaygrade"
+    ],
+  "icon": "minecraft:dragon_head",
+  "impact": 2,
+  "name": "Dragon",
+  "description": "Born of dragon blood"
+}
+
+
+
+
+
+

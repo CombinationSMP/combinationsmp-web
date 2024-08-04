@@ -1,0 +1,23 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:invisibility",
+            "duration": 5,
+            "amplifier": 4,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.sneak",
+        "continuous": true
+    },
+    "name": "Invisibility",
+    "description": "You can press shift to turn invisible"
+}

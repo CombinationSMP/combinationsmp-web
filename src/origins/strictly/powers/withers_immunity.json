@@ -1,0 +1,10 @@
+{
+        "type": "origins:effect_immunity",
+        "effects": [
+          "minecraft:poison",
+          "minecraft:wither",
+          "minecraft:hunger",
+          "orcz:stunlock",
+          "orcz:stunspam"
+        ]
+}

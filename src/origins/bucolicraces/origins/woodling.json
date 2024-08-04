@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/quartersize",
+    "bucolicraces:damage_taken_modifiers/flamable",
+    "bucolicraces:health_modifiers/sevenheart",
+    "bucolicraces:ally_modifiers/villagerdiscountbetter",
+    "bucolicraces:zmisc_modifiers/photosynthesis",
+    "bucolicraces:ally_modifiers/passive",
+    "bucolicraces:diet_modifiers/honeybuff",
+    "bucolicraces:status_effect_modifiers/blendin"
+  ],
+  "icon": "minecraft:oak_sapling",
+  "impact": 1,
+  "name": "Woodling",
+  "description": "A child of the woods, a woodling is a mischievous wood creature!"
+}

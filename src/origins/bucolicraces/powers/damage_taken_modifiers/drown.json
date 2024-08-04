@@ -1,0 +1,9 @@
+{
+  "type": "origins:invulnerability",
+  "name": "Drown Immunity",
+  "description": "You are immune to drowning damage",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "drown"
+  }
+}

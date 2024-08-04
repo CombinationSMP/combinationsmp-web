@@ -1,0 +1,21 @@
+{
+  "powers": [
+        "bucolicraces:biome_modifiers/iceelemental",
+        "bucolicraces:size_modifiers/reset",
+        "bucolicraces:diet_modifiers/coldbiomediet",
+        "bucolicraces:zmisc_modifiers/lay_ice",
+        "bucolicraces:damage_taken_modifiers/flamable",
+        "bucolicraces:abilities/icegolemshot",
+        "bucolicraces:speed_modifiers/ice_slip"
+    ],
+  "icon": "minecraft:snow_block",
+  "impact": 2,
+  "name": "Ice Elemental",
+  "description": "You are made of ice!"
+}
+
+
+
+
+
+

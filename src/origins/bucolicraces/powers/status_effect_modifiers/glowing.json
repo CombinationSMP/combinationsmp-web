@@ -1,0 +1,21 @@
+{
+    "type": "origins:self_glow",
+    "name": "Torch Insides",
+    "description":"Your jackolantern heritage makes you glow in dark areas",
+    "use_teams": false,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:brightness",
+            "comparison": "<",
+            "compare_to": 0.15
+          },
+          {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water",
+            "inverted": true
+          }
+        ]
+      }
+}

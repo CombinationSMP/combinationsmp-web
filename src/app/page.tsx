@@ -6,7 +6,6 @@ import Button from "./_components/button";
 import containerStyles from "@/styles/container.module.scss";
 
 const Home: NextPage = () => {
-  console.log(palette.tertiary, "a");
   return (
     <>
       <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>

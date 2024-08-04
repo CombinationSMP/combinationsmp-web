@@ -1,0 +1,22 @@
+{
+  "powers": [
+          "bucolicraces:zmisc_modifiers/noores",
+          "bucolicraces:armor_modifiers/golden",
+          "bucolicraces:diet_modifiers/weak_stomach",
+          "bucolicraces:recipes/explosive",
+          "bucolicraces:on-hit_modifiers/strong",
+          "bucolicraces:ally_modifiers/noble",
+          "bucolicraces:zmisc_modifiers/smart"
+
+    ],
+  "icon": "minecraft:golden_chestplate",
+  "impact": 3,
+  "name": "Noble Knight",
+  "description": "Born into a noble household you have much higher standards and an extensive education"
+}
+
+
+
+
+
+

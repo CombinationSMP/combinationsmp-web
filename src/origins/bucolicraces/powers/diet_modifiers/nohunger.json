@@ -1,0 +1,13 @@
+
+{
+  "type": "origins:action_over_time",
+  "name": "No Appetite",
+  "description": "You go through no food",
+  "interval": 1060,
+  "entity_action": {
+      "type": "origins:feed",
+       "food": 4,
+       "saturation": 30
+  }
+
+}

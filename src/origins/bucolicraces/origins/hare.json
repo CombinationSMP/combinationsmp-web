@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/halfsize",
+    "bucolicraces:status_effect_modifiers/fast",
+    "bucolicraces:diet_modifiers/vegetarian",
+    "bucolicraces:ally_modifiers/wolfhunt",
+    "bucolicraces:health_modifiers/fiveheart",
+    "bucolicraces:jumping_modifiers/harejump",
+    "bucolicraces:fall_modifiers/harefall"
+  ],
+  "icon": "minecraft:rabbit_foot",
+  "impact": 2,
+  "name": "Hare",
+  "description": "As a humanoid rabbit, your life is fraught with danger. Predators like wolves will attack you on sight, but you compensate for your gentle nature and low strength with increased speed!"
+}

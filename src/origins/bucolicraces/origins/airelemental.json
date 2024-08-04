@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "bucolicraces:skin_modifiers/airy",
+        "bucolicraces:abilities/airshot",
+        "bucolicraces:fall_modifiers/slowfall",
+        "bucolicraces:diet_modifiers/airelemental/airfood",
+        "bucolicraces:diet_modifiers/airelemental/airdiet",
+        "bucolicraces:diet_modifiers/airelemental/feather"
+      ],
+    "icon": "minecraft:white_stained_glass",
+    "impact": 2,
+    "name": "Air Elemental",
+    "description": "A gust of wind imbued with magic and become sentient. "
+  }
+  

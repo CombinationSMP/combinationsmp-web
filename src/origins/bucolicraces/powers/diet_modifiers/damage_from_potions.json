@@ -1,0 +1,19 @@
+{
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 2.0,
+        "source": {
+            "name": "magic",
+            "bypasses_armor": true
+          }
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:potion"
+        }
+    },
+    "name": "Godly Rejection",
+    "description": "Your godly body regects all foreign objects such as potions and status effects"
+}

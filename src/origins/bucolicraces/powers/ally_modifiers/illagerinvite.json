@@ -1,0 +1,43 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 80,
+	"entity_action": {
+		"type": "origins:and",
+		"actions":
+		[	
+			{
+				"type": "origins:execute_command",
+				"command": "team join Illager @e[type=minecraft:pillager]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Illager @e[type=minecraft:vindicator]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Illager @e[type=minecraft:evoker]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Illager @e[type=minecraft:illusioner]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Illager @e[type=minecraft:ravager]",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join Illager @e[type=minecraft:vex]",
+				"permission_level": 4
+			}
+		]
+	},
+
+	"name": "Illager",
+	"description": "Members of the Illager faction will not attack you"
+}

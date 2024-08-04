@@ -1,0 +1,14 @@
+{
+	"powers": [
+                "strictly:skofnung",
+                "strictly:skilled_swordsman",
+		"strictly:valour",
+                "strictly:burdened",
+                "strictly:bowless",
+                "strictly:book",
+                "strictly:crescent_worship"
+	],
+	"icon": "strictly_origins:skofnung",
+	"impact": 2,
+        "order": 1
+}

@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -14
+    },
+  
+    "name": "Fragile",
+    "description": "You have a fragile constitution and only have 3 hearts!"
+  }

@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -0
+    },
+  
+    "name": "Average",
+    "description": "You have an average constitution and you have 10 hearts!"
+  }

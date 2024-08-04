@@ -1,0 +1,58 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "playsound minecraft:entity.firework_rocket.large_blast_far ambient @a ~ ~ ~ 1"
+            },
+            {
+                "type": "origins:raycast",
+                "distance": 32,
+                "block": true,
+                "entity": true,
+                "shape_type": "visual",
+                "command_along_ray": "particle minecraft:dust 1 0.2 0.2 .7 ~ ~ ~ 0 0 0 0 5 normal",
+                "command_at_hit": "particle minecraft:explosion ~ ~ ~ 1 1 1 2 6 normal @a",
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:area_of_effect",
+                        "radius": 3,
+                        "include_target": true,
+                        "bientity_action": {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:damage",
+                                "amount": 25,
+                                "source": {
+                                    "name": "onFire",
+                                    "bypasses_armor": false
+                                }
+                            },
+                            "bientity_condition": {
+                                "type": "origins:can_see"
+                            }
+                        }
+                    }
+                },
+                "block_action": {
+                    "type": "origins:explode",
+                    "power": 3,
+                    "destruction_type": "none",
+                    "damage_self": false,
+                    "create_fire": false
+                }
+            }
+        ]
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 20
+    },
+    "name": "Head Laser",
+    "description": "Use the laser in your skull to fire off a large blast"
+}

@@ -1,0 +1,6 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:campfire_cosy_smoke",
+    "frequency": 10,
+    "hidden": true
+  }

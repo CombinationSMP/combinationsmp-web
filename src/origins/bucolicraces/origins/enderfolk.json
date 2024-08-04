@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/threeblockstall",
+    "bucolicraces:jumping_modifiers/threetalljump",
+    "bucolicraces:speed_modifiers/threetallspeed",
+    "bucolicraces:health_modifiers/fifteenheart",
+    "bucolicraces:ally_modifiers/endermanteam",
+    "bucolicraces:ally_modifiers/endermanteaminviteenderman",
+    "bucolicraces:skin_modifiers/black_skin",
+    "bucolicraces:diet_modifiers/vegetarian",
+    "bucolicraces:abilities/throw_ender_pearl",
+    "bucolicraces:size_modifiers/endermanwidth",
+    "bucolicraces:damage_taken_modifiers/water_vulnerability",
+    "bucolicraces:zmisc_modifiers/pumpkin_hate",
+    "bucolicraces:skin_modifiers/ender_particles"
+  ],
+  "icon": "minecraft:ender_pearl",
+  "impact": 2,
+  "name": "Enderfolk",
+  "description": "Originally an inhabitant of The End, you have made a new home for yourself in the Overworld"
+}

@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/threeblockstall",
+    "bucolicraces:jumping_modifiers/threetalljump",
+    "bucolicraces:speed_modifiers/threetallspeed",
+    "bucolicraces:health_modifiers/fifteenheart",
+    "bucolicraces:damage_taken_modifiers/flamable",
+    "bucolicraces:skin_modifiers/sporeblossum",
+    "bucolicraces:skin_modifiers/bark_skin",
+    "bucolicraces:zmisc_modifiers/photosynthesis",
+    "bucolicraces:diet_modifiers/dietnone",
+    "bucolicraces:abilities/summon_tree",
+    "bucolicraces:ally_modifiers/passive",
+    "bucolicraces:diet_modifiers/honeydiet",
+    "bucolicraces:diet_modifiers/honeybuff"
+  ],
+  "icon": "biomesoplenty:mahogany_sapling",
+  "impact": 2,
+  "name": "Treant",
+  "description": "You are the result of a rogue magic spell. Once just wood and leaves, magic has given you new life, and you must find your own way in this world"
+}

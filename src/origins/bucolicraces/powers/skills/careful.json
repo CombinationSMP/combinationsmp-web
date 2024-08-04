@@ -1,0 +1,12 @@
+{
+    "type": "origins:phasing",
+    "name": "Careful",
+    "description" : "You can't activate trip wire hooks or pressure plates",
+    "blacklist": false,
+    "render_type": "none",
+    "view_distance": 10,
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "*:trap_blocks"
+    }
+}

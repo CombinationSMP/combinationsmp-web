@@ -1,0 +1,8 @@
+{
+	"type": "origins:starting_equipment",
+	"stack": {
+		"item": "minecraft:written_book",
+        "tag": "{display: {Name: '{\"text\": \"Templar Mission\", \"color\": \"light_purple\", \"italic\": false}'}, title: \"Templar Mission\", author: \"OrangeJewce92\", pages: ['{\"text\": \"Find a librarian and learn his ways for then he will grant you the ability to purchase the scroll needed to smith the sword back to its original form.\"}', '{\"text\": \"Good Luck..\"}']}",
+		"slot": 5
+	}
+}

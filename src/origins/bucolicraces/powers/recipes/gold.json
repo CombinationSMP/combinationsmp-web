@@ -1,0 +1,18 @@
+{
+    "type": "origins:recipe",
+    "name": "Gold Facination",
+    "description": "Craft multiple gold bars from raw gold ore",
+    "recipe": {
+        "id": "origins:cheap_beetroot",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "minecraft:raw_gold"
+            }
+        ],
+        "result": {
+            "item": "minecraft:gold_ingot",
+            "count": 3
+        }
+    }
+}

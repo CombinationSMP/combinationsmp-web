@@ -1,0 +1,18 @@
+{
+	"powers": [
+        "strictly:haste", 
+		"strictly:potent_brew",
+        "strictly:miniature_dwarf",
+        "strictly:dense",
+		"strictly:insatiable_hunger",
+		"strictly:gold_lover",
+		"strictly:nocturnal_eyes1",
+        "strictly:pickaxeless_stone",
+		"strictly:jump",
+		"strictly:step_height" 
+		
+	],
+	"icon": "minecraft:gold_ingot",
+	"impact": 3,
+		"order": 10
+}

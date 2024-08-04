@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": 20
+    },
+  
+    "name": "Unshakeable",
+    "description": "Your constituion is impervious! You have 20 hearts"
+  }

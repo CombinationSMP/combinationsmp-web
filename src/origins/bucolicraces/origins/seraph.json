@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/twoandahalfblockstall",
+    "bucolicraces:jumping_modifiers/threetalljump",
+    "bucolicraces:speed_modifiers/threetallspeed",
+ 
+    "bucolicraces:diet_modifiers/vegetarian",
+    "bucolicraces:skin_modifiers/aura_particles_electric_spark",
+    "bucolicraces:skills/greater_wings",
+    "bucolicraces:on-hit_modifiers/holy_smite",
+    "bucolicraces:ally_modifiers/villagerdiscount",
+    "bucolicraces:ally_modifiers/passive"
+  ],
+  "icon": "minecraft:nether_star",
+  "impact": 2,
+  "name": "Seraph",
+  "description": "A heavenly being, you are nearly impossible to behold. Your eyes and wings are many and your weaknesses are few. Seraphim possess flight and do greater damage against creatures who originate in the Nether"
+}
+
+
+
+
+
+

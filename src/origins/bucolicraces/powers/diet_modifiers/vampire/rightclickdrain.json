@@ -1,0 +1,75 @@
+{
+    "type": "origins:multiple",
+    "name": "Blood Sucker",
+    "description": "Sneak right click on a mob to drain them for health at night",
+    "drain": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:damage",
+                        "amount": 4,
+                        "source": {
+                            "name": "dryout.player",
+                            "magic": true,
+                            "bypasses_armor": true
+                        }
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "particle minecraft:falling_lava ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                    }
+                ]
+            }
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:exposed_to_sun",
+                    "inverted":true
+                }
+            ]
+        }
+    },
+    "heal": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:heal",
+                 "amount": 4
+            }
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:exposed_to_sun",
+                    "inverted":true
+                }
+            ]
+        }
+    }
+}

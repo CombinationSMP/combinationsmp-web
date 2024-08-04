@@ -1,0 +1,17 @@
+
+{
+    "type":"origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 120,
+    "effect": {
+      "effect": "minecraft:regeneration",
+      "amplifier": 1,
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": true
+    },
+  
+    "name": "Passive Regeneration",
+    "description": "Your magic blood gives you a strong passive regeneration."
+  }

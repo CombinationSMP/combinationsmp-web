@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -6
+    },
+  
+    "name": "Weak",
+    "description": "You have a Weak constitution and only have 7 hearts!"
+  }

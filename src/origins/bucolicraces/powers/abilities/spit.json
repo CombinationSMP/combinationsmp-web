@@ -1,0 +1,20 @@
+{
+    "type": "origins:fire_projectile",
+    "name": "Spit",
+    "description": "... now that is just gross",
+    "cooldown": 140,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 16
+    },
+    "entity_type": "minecraft:llama_spit",
+    "sound": "minecraft:entity.llama.spit",
+    "speed": 1.5,
+    "divergence": 7,
+    "count": 15,
+    "interval": 3,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "type": "origins:multiple",
+    "elytra": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true,
+        "texture_location": "minecraft:textures/entity/elytra.png"
+    },
+    "flap": {
+        "type": "origins:active_self",
+        "cooldown": 20,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 4
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "x": 0,
+                    "y": 0.5,
+                    "z": 2,
+                    "space": "local",
+                    "set": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.ender_dragon.flap master @a[distance=..15] ~ ~ ~ 1 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.7 0.2 0.7 0.01 30 normal"
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    }
+}

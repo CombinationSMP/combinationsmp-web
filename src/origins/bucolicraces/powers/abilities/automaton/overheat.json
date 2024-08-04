@@ -1,0 +1,30 @@
+{
+    "type": "origins:resource",
+    "name": "Overheat",
+    "description": "The more abilities you use the more you overheat, and will eventually explode. Fire increases heat, and water reduces it. You also passively reduce heat overtime.",
+    "min": 0,
+    "max": 100,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 15
+    },
+    "max_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:explode",
+                "power": 5,
+                "destruction_type": "break",
+                "damage_self": true,
+                "create_fire": true
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "bucolicraces:abilities/automaton/overheat",
+                "operation": "add",
+                "change": -100
+            }
+        ]
+    }
+}

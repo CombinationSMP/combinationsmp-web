@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/quartersize",
+    "bucolicraces:speed_modifiers/quartertallflight",
+    "bucolicraces:health_modifiers/fiveheart",
+    "bucolicraces:skills/greater_wings",
+    "bucolicraces:on-hit_modifiers/poison",
+    "bucolicraces:diet_modifiers/nectar",
+    "bucolicraces:diet_modifiers/honeybuff",
+    "bucolicraces:diet_modifiers/honeydiet",
+    "bucolicraces:ally_modifiers/beeteam",
+    "bucolicraces:ally_modifiers/beeteaminvite",
+    "bucolicraces:zmisc_modifiers/lay_bee",
+    "bucolicraces:zmisc_modifiers/lay_bee1"
+
+  ],
+  "icon": "minecraft:bee_nest",
+  "impact": 2,
+  "name": "Bee Folk",
+  "description": "Evolved beyond the worker mentality of your bee friends, you have developed hopes and dreams. Your mind is almost as sharp as your stinger!"
+}

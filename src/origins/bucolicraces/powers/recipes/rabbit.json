@@ -1,0 +1,21 @@
+{
+    "type": "origins:recipe",
+    "name": "Rabbit Stew",
+    "description": "Craft rabbit stew with raw rabbit and a bowl!",
+    "recipe": {
+        "id": "origins:cheap_rabbit",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "minecraft:rabbit"
+            },
+            {
+                "item": "minecraft:bowl"
+            }
+        ],
+        "result": {
+            "item": "minecraft:rabbit_stew",
+            "count": 1
+        }
+    }
+}

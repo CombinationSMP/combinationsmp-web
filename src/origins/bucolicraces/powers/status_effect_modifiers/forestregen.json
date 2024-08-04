@@ -1,0 +1,45 @@
+{
+    "name": "Of The Forest",
+    "description": "When nearby a grove you will get regeneration!",
+    "interval": 240,
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:regeneration",
+                "duration": 245,
+                "show_particles": false,
+                "amplifier": 0,
+                "show_icon": false
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:block_in_radius",
+                "block_condition": {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:leaves"
+                },
+                "radius": 20,
+                "shape": "cube",
+                "comparison": ">=",
+                "compare_to": 30
+            },
+            {
+                "type": "origins:block_in_radius",
+                "block_condition": {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:logs"
+                },
+                "radius": 20,
+                "shape": "cube",
+                "comparison": ">=",
+                "compare_to": 100
+            }
+        ]
+    }
+}

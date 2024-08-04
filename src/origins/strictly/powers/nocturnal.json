@@ -1,0 +1,4 @@
+{
+    "type": "origins:prevent_sleep",
+    "message": "You can't sleep in beds"  
+}

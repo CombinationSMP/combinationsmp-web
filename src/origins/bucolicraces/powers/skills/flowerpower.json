@@ -1,0 +1,27 @@
+{
+    "type": "origins:action_over_time",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "minecraft:flowers"
+            }
+        }
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:regeneration",
+                "duration": 100,
+                "amplifier": 1
+            }
+        ]
+    },
+    "hidden": false,
+    "interval": 20,
+    "name": "Flower Power",
+    "description": "Holding a flower makes me feel better!"
+}

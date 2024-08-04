@@ -1,0 +1,13 @@
+
+    {
+        "type": "origins:modify_projectile_damage",
+        "damage_condition": {
+                "type": "origins:projectile",
+                "projectile": "minecraft:llama_spit"
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "hidden":true
+    }

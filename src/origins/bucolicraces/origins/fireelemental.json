@@ -1,0 +1,22 @@
+{
+    "powers": [
+      "bucolicraces:damage_taken_modifiers/wick_water_vulnerability",
+      "bucolicraces:zmisc_modifiers/fireheal",
+      "bucolicraces:damage_taken_modifiers/fire_immunity",
+      "bucolicraces:size_modifiers/reset",
+      "bucolicraces:damage_taken_modifiers/water_vulnerability",
+      "bucolicraces:skin_modifiers/smoke",
+      "bucolicraces:abilities/blaze",
+      "bucolicraces:diet_modifiers/fireelemental/coal",
+      "bucolicraces:diet_modifiers/fireelemental/charcoal",
+      "bucolicraces:diet_modifiers/fireelemental/lava",
+      "bucolicraces:diet_modifiers/fireelemental/blazingbucket",
+      "bucolicraces:diet_modifiers/fireelemental/lessnutritionfire",
+      "bucolicraces:skin_modifiers/red_skin"
+      ],
+    "icon": "minecraft:magma_block",
+    "impact": 3,
+    "name": "Fire Elemental",
+    "description": "A being made of pure heat, you must feed your inner fire to survive."
+  }
+  

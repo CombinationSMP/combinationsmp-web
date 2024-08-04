@@ -1,0 +1,18 @@
+{
+    "type": "origins:recipe",
+    "name": "Decomposer",
+    "description": "Craft dirt with any food item in a crafting grid!",
+    "recipe": {
+        "id": "origins:cheap_dirt",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "tag": "bucolicraces:food"
+            }
+        ],
+        "result": {
+            "item": "minecraft:dirt",
+            "count": 1
+        }
+    }
+}

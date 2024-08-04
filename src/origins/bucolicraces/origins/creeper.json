@@ -1,0 +1,21 @@
+{
+  "powers": [
+      "bucolicraces:size_modifiers/belowaverage",
+      "bucolicraces:health_modifiers/sevenheart",
+      "bucolicraces:abilities/creeper_explode",
+      "bucolicraces:on-hit_modifiers/explosiononhit",
+      "bucolicraces:ally_modifiers/trading",
+      "bucolicraces:zmisc_modifiers/lay_gunpowder"
+
+    ],
+  "icon": "minecraft:creeper_head",
+  "impact": 2,
+  "name": "Creeper",
+  "description": "Awhh mannnn..."
+}
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/quartersize",
+    "bucolicraces:diet_modifiers/rawbuff",
+    "bucolicraces:recipes/dirt",
+    "bucolicraces:recipes/bonemeal",
+    "bucolicraces:skills/dirtswimmer",
+    "bucolicraces:diet_modifiers/worm/bonemeal",
+    "bucolicraces:diet_modifiers/bonediet"
+
+
+
+  ],
+  "icon": "minecraft:bone_meal",
+  "impact": 2,
+  "name": "Worm",
+  "description": "A vital decomposer in the ecosystem"
+}

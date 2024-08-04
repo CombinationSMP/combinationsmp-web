@@ -1,0 +1,6 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:falling_honey",
+    "frequency": 8,
+    "hidden": true
+  }

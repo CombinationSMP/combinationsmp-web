@@ -1,0 +1,19 @@
+
+{
+    "type": "origins:active_self",
+	"name": "Flush",
+	"description": "Flush all of the water, along with any status effects you had, out of your system",
+    "entity_action": {
+        "type": "origins:clear_effect"
+    },
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 3
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": true
+    }
+}

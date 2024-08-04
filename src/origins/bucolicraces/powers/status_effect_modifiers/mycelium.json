@@ -1,0 +1,34 @@
+{
+    "name": "Fungal",
+    "description": "When nearby enough mycelium you get buffs",
+    "interval": 40,
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:resistance",
+                "duration": 45,
+                "show_particles": false,
+                "amplifier": 0,
+                "show_icon": false
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:block_in_radius",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:mycelium"
+                },
+                "radius": 20,
+                "shape": "cube",
+                "comparison": ">=",
+                "compare_to": 15
+            }
+        ]
+    }
+}

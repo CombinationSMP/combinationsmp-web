@@ -1,0 +1,14 @@
+{
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+			"effect": "minecraft:strength",
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": false,
+			"amplifier": 1,
+			"duration": 1000
+		}
+	},
+	"interval": 200
+}

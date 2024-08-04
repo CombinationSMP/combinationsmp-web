@@ -1,0 +1,14 @@
+{
+	"powers":[
+		"origins:more_exhaustion",
+		"origins:nine_lives",
+		"origins-plus-plus:beaver/aquatic",
+		"origins-plus-plus:beaver/lazy",
+		"origins-plus-plus:beaver/logger",
+		"origins-plus-plus:beaver/rage",
+		"origins-plus-plus:beaver/razor_teeth",
+		"origins-plus-plus:beaver/storage"
+	],
+	"icon":"minecraft:brown_wool",
+	"impact":2
+}

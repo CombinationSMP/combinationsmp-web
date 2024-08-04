@@ -1,0 +1,43 @@
+{
+    "type": "origins:multiple",
+    "name":"Drill Hand",
+    "description":"You can mine stone with your hands",
+    "harvest_stone": {
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "bucolicraces:natural_stone"
+        },
+        "allow": true
+    },
+    "harvest_ore": {
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "bucolicraces:ores"
+        },
+        "allow": true
+    },
+    "speed_stone": {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "bucolicraces:natural_stone"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 3
+        }
+    },
+    "speed_ore": {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "bucolicraces:ores"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 3
+        }
+    }
+}

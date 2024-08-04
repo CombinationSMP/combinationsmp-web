@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_exhaustion",
+  "name": "Giant Appetite",
+  "description": "Being larger you require more food!",
+  "modifier": {
+    "name": "Extra exhaustion from large appetite",
+    "value": 1.4,
+    "operation": "multiply_base"
+  }
+}

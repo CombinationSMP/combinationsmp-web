@@ -1,0 +1,20 @@
+{
+    "powers": [
+      "bucolicraces:size_modifiers/quartersize",
+      "bucolicraces:health_modifiers/fiveheart",
+      "bucolicraces:diet_modifiers/rawbuff",
+      "bucolicraces:diet_modifiers/rawdiet",
+      "bucolicraces:zmisc_modifiers/dull",
+      "bucolicraces:abilities/shroomlaunch",
+      "bucolicraces:abilities/launch",
+      "bucolicraces:recipes/mycelium",
+      "bucolicraces:skin_modifiers/thick_spores",
+      "bucolicraces:skin_modifiers/mush_particles",
+      "bucolicraces:status_effect_modifiers/mycelium"
+
+    ],
+    "icon": "minecraft:red_mushroom_block",
+    "impact": 2,
+    "name": "MushFolk",
+    "description": "As sentient shrooms, Mush Folk are not the most intelligent of origins. Small and skittish, they tend to make their home near the mycellium and fungi that they once belonged to."
+  }

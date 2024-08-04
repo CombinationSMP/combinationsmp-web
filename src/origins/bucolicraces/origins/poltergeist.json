@@ -1,0 +1,21 @@
+{
+    "powers": [
+        "bucolicraces:zmisc_modifiers/nosleep",
+        "bucolicraces:skin_modifiers/glow",
+        "bucolicraces:skin_modifiers/blue_ghost_skin",
+        "bucolicraces:abilities/cloaking", 
+        "bucolicraces:abilities/aoelevitation", 
+        "bucolicraces:diet_modifiers/miniscule",
+        "bucolicraces:diet_modifiers/poltergeist/bone",
+        "bucolicraces:diet_modifiers/poltergeist/phantom_membrane",
+        "bucolicraces:diet_modifiers/poltergeist/soul_bottle",
+        "bucolicraces:diet_modifiers/poltergeist/soul_heart",
+        "bucolicraces:diet_modifiers/ghostdiet"
+
+
+    ],
+    "icon": "minecraft:packed_ice",
+    "impact": 2,
+    "name": "Poltergeist",
+    "description": "You are a being that has passed away giving you ghostly abilities as you struggle to maintain existence"
+}

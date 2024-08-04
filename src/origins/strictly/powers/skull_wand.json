@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "orcz:skullwand",
+                    "tag":"{Unbreakable:1,AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:5,Slot:head,Name:\"generic.armor\",UUID:[I;-123025,17765,15636,-35530]},{AttributeName:\"generic.armor_toughness\",Amount:2,Slot:head,Name:\"generic.armor_toughness\",UUID:[I;-123025,17865,15636,-35730]},{AttributeName:\"lodestone:magic_resistance\",Amount:6,Slot:head,Name:\"lodestone:magic_resistance\",UUID:[I;-123025,17965,15636,-35930]}],display:{Name:'[{\"text\":\"Shaman Wand\",\"italic\":false,\"color\":\"dark_green\"}]',Lore:['[{\"text\":\"The call of the skies.\",\"italic\":false}]']},Enchantments:[{id:\"dungeons_gear:wild_rage\",lvl:4},{id:\"greekfantasy:poisoning\",lvl:3}]}",
+                    "amount": 1
+                }
+            }
+        ]
+    }
+}

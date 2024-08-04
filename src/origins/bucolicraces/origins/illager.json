@@ -1,0 +1,21 @@
+{
+  "powers": [
+        "bucolicraces:ally_modifiers/irongolemmad",
+        "bucolicraces:ally_modifiers/trading",
+        "bucolicraces:on-hit_modifiers/bowdamage",
+        "bucolicraces:on-hit_modifiers/axedamage",
+        "bucolicraces:ally_modifiers/illagerteam",
+        "bucolicraces:ally_modifiers/illagerinvite",
+        "bucolicraces:status_effect_modifiers/banner"
+    ],
+  "icon": "minecraft:crossbow",
+  "impact": 1,
+  "name": "Illager",
+  "description": "You are a villager that abandoned his previous life to be a bandit"
+}
+
+
+
+
+
+

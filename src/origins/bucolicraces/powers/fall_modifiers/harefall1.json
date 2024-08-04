@@ -1,0 +1,36 @@
+{
+    "type": "origins:multiple",
+    "modify_falling": {
+        "type": "origins:modify_falling",
+        "take_fall_damage": false,
+        "hidden": true,
+        "velocity": 0.1,
+        "condition": {
+            "type": "origins:fall_distance",
+            "comparison": "<=",
+            "compare_to": 6
+        }
+    },
+    "modify_falling1": {
+        "type": "origins:modify_falling",
+        "take_fall_damage": true,
+        "hidden": true,
+        "velocity": 0.1,
+        "condition": {
+            "type": "origins:fall_distance",
+            "comparison": ">",
+            "compare_to": 6
+        }
+    },
+    "modifyfalldamage": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": -6
+        }
+    }
+}

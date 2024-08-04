@@ -1,0 +1,32 @@
+{
+    "type": "origins:restrict_armor",
+    "tick_rate": 40,
+    "head": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:iron_helmet"
+        
+        }
+    },
+    "chest": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:iron_chestplate"
+        }
+    },
+    "legs": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:iron_leggings"
+                }
+    },
+    "feet": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:iron_boots"
+        }
+    },
+    "name": "Ferrumphobia Armor",
+    "description": "You can't equip iron armor",
+    "hidden": true
+  }

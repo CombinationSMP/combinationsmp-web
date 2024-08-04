@@ -1,0 +1,8 @@
+{
+  "type": "origins:invulnerability",
+  "name":"Fire Resistance",
+  "description":"Your body is immune to fire",
+  "damage_condition": {
+    "type": "origins:fire"
+  }
+}

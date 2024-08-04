@@ -1,0 +1,24 @@
+{
+    "type": "origins:recipe",
+    "name": "Explosive Education",
+    "description": "Craft TNT with paper,gunpowder, and sand in the crafting grid",
+    "recipe": {
+        "id": "origins:cheap_beetroot",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "minecraft:gunpowder"
+            },
+            {
+                "item": "minecraft:paper"
+            },
+            {
+                "item": "minecraft:sand"
+            }
+        ],
+        "result": {
+            "item": "minecraft:tnt",
+            "count": 1
+        }
+    }
+}

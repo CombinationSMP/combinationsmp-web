@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "bucolicraces:abilities/birdlaunch",
+    "bucolicraces:abilities/launch_high",
+    "bucolicraces:skills/elytra",
+    "bucolicraces:damage_taken_modifiers/hollowbones",
+    "bucolicraces:diet_modifiers/pescatarian",
+    "bucolicraces:ally_modifiers/wolfhunt",
+    "bucolicraces:on-hit_modifiers/weak",
+    "bucolicraces:armor_modifiers/lightweight"
+  ],
+  "icon": "minecraft:feather",
+  "impact": 2,
+  "name": "Avian",
+  "description": "A child of wind, you possess the power of flight. From your vantage point in the clouds, our world is vast"
+}

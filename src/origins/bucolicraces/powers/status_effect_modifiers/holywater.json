@@ -1,0 +1,30 @@
+{
+    "type":"origins:stacking_status_effect",
+    "min_stacks": -2,
+    "max_stacks": 2,
+    "duration_per_stack": 60,
+    "name":"Holy Water",
+    "description":"All water has been blessed at some point probably. Sucks for you!",
+    "effect": {
+      "effect": "minecraft:poison",
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": false
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": ">",
+          "compare_to": 0.0
+        },
+        {
+          "type": "origins:in_rain"
+        }
+      ]
+    },
+      "hidden":true
+  }
+ 

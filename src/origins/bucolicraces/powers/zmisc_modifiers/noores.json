@@ -1,0 +1,13 @@
+{
+    "type": "origins:modify_break_speed",
+    "name":"Noble Heritage",
+    "description":"You feel like you are above mining, ores are unbreakable",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "bucolicraces:ores"
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": -50
+    }
+}

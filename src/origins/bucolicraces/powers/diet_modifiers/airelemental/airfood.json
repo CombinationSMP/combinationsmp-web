@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Gale Grazing",
+    "description": "Being high in the sky nourishes your body",
+    "interval": 240,
+    "entity_action": {
+        "type": "origins:feed",
+         "food": 4,
+         "saturation": 4
+    },
+    
+    "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+            "type": "origins:height",
+            "comparison": ">",
+            "compare_to": 134
+          }
+    }
+    
+}

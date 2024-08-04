@@ -1,0 +1,13 @@
+{
+    "hidden": true,
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:projectile",
+        "projectile": "minecraft:arrow"
+    },
+    "modifier": {
+        "name": "Weak arrows",
+        "operation": "addition",
+        "value": -5.5
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/quartersize",
+    "bucolicraces:health_modifiers/fiveheart",
+    "bucolicraces:skills/greaterflight",
+    "bucolicraces:skin_modifiers/rainbowhead",
+    "bucolicraces:on-hit_modifiers/passive",
+    "bucolicraces:skin_modifiers/fairy_particles",
+    "bucolicraces:diet_modifiers/nectar",
+    "bucolicraces:diet_modifiers/honeybuff",
+    "bucolicraces:diet_modifiers/honeydiet",
+    "bucolicraces:ally_modifiers/beeteam",
+    "bucolicraces:ally_modifiers/beeteaminvite",
+    "bucolicraces:damage_taken_modifiers/spiders"
+
+
+  ],
+  "icon": "minecraft:lily_of_the_valley",
+  "impact": 3,
+  "name": "Butterfly",
+  "description": "A sentient butterfly! You are beautiful and completely passive!"
+}

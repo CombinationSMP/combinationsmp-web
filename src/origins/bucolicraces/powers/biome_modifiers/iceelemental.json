@@ -1,0 +1,167 @@
+{
+    "type": "origins:multiple",
+    "name": "Shrinking",
+    "description": "Your size is dependent on your current biome",
+    "largest": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 2"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:temperature",
+            "comparison": "<=",
+            "compare_to": 0
+        }
+    },
+    "average": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 1"
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "<=",
+                    "compare_to": 0.5
+                }
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": ">=",
+                    "compare_to": 0
+                }
+            }
+        ]
+    },
+    "threequarters": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.5"
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "<=",
+                    "compare_to": 1
+                }
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": ">=",
+                    "compare_to": 0.5
+                }
+            }
+        ]
+    },
+    "oneblock": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.25"
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "<=",
+                    "compare_to": 1.5
+                }
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            }
+        ]
+    },
+    "halfblock": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.125"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.125"
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "<=",
+                    "compare_to": 2
+                }
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": ">=",
+                    "compare_to": 1.5
+                }
+            }
+        ]
+    }
+}

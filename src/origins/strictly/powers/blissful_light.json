@@ -1,0 +1,12 @@
+{
+
+    "condition": {
+        "type": "origins:daytime"
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "effect give @s speed 5 2 true"
+    }
+}

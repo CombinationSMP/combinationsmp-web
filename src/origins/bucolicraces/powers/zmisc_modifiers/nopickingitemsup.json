@@ -1,0 +1,9 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action":
+    {
+        "type": "origins:execute_command",
+        "command": "execute as @e[distance=..2,type=item,nbt={Item:{id:\"minecraft:totem_of_undying\"}}] run data merge entity @s {PickupDelay:40s}"
+    }
+}

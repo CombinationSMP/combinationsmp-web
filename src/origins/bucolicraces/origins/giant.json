@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/fiveblockstall",
+    "bucolicraces:jumping_modifiers/fivetalljump",
+    "bucolicraces:speed_modifiers/fivetallspeed",
+    "bucolicraces:health_modifiers/twentyheart",
+    "bucolicraces:skills/groundslam",
+    "bucolicraces:status_effect_modifiers/strength",
+    "bucolicraces:diet_modifiers/giantdiet",
+    "bucolicraces:armor_modifiers/natural_armor"
+  ],
+  "icon": "minecraft:wooden_sword",
+  "impact": 2,
+  "name": "Giant",
+  "description": "A special breed of massive humans! Your size greatly affects how you live your day to day life! "
+}

@@ -1,0 +1,19 @@
+
+{
+	"type": "origins:active_self",
+	"cooldown": 1200,
+	"hud_render": {
+		"should_render": true,
+    "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+    "bar_index": 8
+	},
+	"entity_action": {
+		"type": "origins:exhaust",
+    "amount": 0.4
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+  "name": "Gust",
+	"description": "Flap your wings and launch yourself into the air!"
+}

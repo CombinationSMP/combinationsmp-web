@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_exhaustion",
+  "name": "Small Appetite",
+  "description": "You go through less food than the average player",
+  "modifier": {
+    "name": "Extra exhaustion from large appetite",
+    "value": 0.5,
+    "operation": "multiply_base"
+  }
+}

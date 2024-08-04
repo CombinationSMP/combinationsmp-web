@@ -1,0 +1,14 @@
+
+  {
+    "name": "Highly Flammable",
+    "description": "You are critically vulnerable to fire! Be careful!",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:fire"
+    },
+    "modifier": {
+      "name": "Additional_damage_taken_while_on_fire",
+      "value": 30,
+      "operation": "addition"
+    }
+  }

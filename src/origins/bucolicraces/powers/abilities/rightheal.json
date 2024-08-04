@@ -1,0 +1,30 @@
+{
+    "name": "Healer Of The Woods",
+    "description": "Sneak right click on a mob to heal them",
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:heal",
+                    "amount": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:dust ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                }
+            ]
+        }
+    },
+    "item_condition": {
+        "type": "origins:empty"
+    },
+    "hands": [
+        "main_hand"
+    ],
+    "condition": {
+        "type": "origins:sneaking"
+    }
+}

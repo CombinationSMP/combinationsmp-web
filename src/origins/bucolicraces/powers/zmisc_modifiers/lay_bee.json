@@ -1,0 +1,21 @@
+{
+  "type": "origins:action_on_wake_up",
+  "name": "Passive Production",
+  "description": "You passively produce bee related items",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:give",
+        "stack": {
+          "item": "minecraft:honeycomb",
+          "amount":4
+        }
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.chicken.egg"
+      }
+    ]
+  }
+}

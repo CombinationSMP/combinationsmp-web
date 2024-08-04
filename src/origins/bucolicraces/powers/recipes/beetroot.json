@@ -1,0 +1,21 @@
+{
+    "type": "origins:recipe",
+    "name": "Saucier",
+    "description": "Craft beetroot soup with only one beet",
+    "recipe": {
+        "id": "origins:cheap_beetroot",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "minecraft:beetroot"
+            },
+            {
+                "item": "minecraft:bowl"
+            }
+        ],
+        "result": {
+            "item": "minecraft:beetroot_soup",
+            "count": 1
+        }
+    }
+}

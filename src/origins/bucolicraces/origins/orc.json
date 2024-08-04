@@ -1,0 +1,17 @@
+{
+    "powers": [
+      "bucolicraces:size_modifiers/twoandahalfblockstall",
+      "bucolicraces:jumping_modifiers/threetalljump",
+      "bucolicraces:speed_modifiers/threetallspeed",
+      "bucolicraces:health_modifiers/fifteenheart",
+
+      "bucolicraces:diet_modifiers/carnivore",
+      "bucolicraces:zmisc_modifiers/dull",
+      "bucolicraces:abilities/berserk",
+      "bucolicraces:skin_modifiers/orc_skin"
+    ],
+    "icon": "minecraft:red_dye",
+    "impact": 1,
+    "name": "Orc",
+    "description": "Tall, mad, and green. Kinda like Shrek."
+  }

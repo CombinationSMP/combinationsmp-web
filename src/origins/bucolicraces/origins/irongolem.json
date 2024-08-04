@@ -1,0 +1,33 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/threeblockstall",
+    "bucolicraces:jumping_modifiers/threetalljump",
+    "bucolicraces:speed_modifiers/threetallspeed",
+    "bucolicraces:health_modifiers/fifteenheart",
+    "bucolicraces:ally_modifiers/villagerdiscount",
+    "bucolicraces:on-hit_modifiers/iron_hands",
+    "bucolicraces:diet_modifiers/nohunger",
+    "bucolicraces:status_effect_modifiers/regen",
+    "bucolicraces:diet_modifiers/irongolem/ironnugget",
+    "bucolicraces:diet_modifiers/irongolem/rawiron",
+    "bucolicraces:diet_modifiers/irongolem/ironingot",
+    "bucolicraces:diet_modifiers/irongolem/crushed_iron_ore",
+    "bucolicraces:diet_modifiers/irongolem/iron_sheet",
+    "bucolicraces:diet_modifiers/irongolem/metal_bar",
+    "bucolicraces:diet_modifiers/irondiet",
+    "bucolicraces:damage_taken_modifiers/fall_immunity",
+    "bucolicraces:zmisc_modifiers/noswords",
+    "bucolicraces:status_effect_modifiers/sinking",
+    "bucolicraces:damage_taken_modifiers/drown"
+    ],
+  "icon": "minecraft:iron_block",
+  "impact": 2,
+  "name": "Iron Golem",
+  "description": "You were hand crafted by another with no will of your own, designed to defend and protect. Having broken free from the shackles that once held you to your maker, you've learned there is a vast world to experience"
+}
+
+
+
+
+
+

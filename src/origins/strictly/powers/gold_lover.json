@@ -1,0 +1,25 @@
+{
+   "type": "origins:stacking_status_effect",
+   "min_stacks": 0,
+   "max_stacks": 10,
+   "duration_per_stack": 20,
+   "effects": [
+      {
+         "effect": "minecraft:strength",
+         "duration": 100,
+         "is_ambient": true,
+         "show_particles": false,
+         "show_icon": false
+      }
+   ],
+   "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+         "type": "origins:ingredient",
+         "ingredient": {
+            "item": "minecraft:gold_ingot"
+         }
+      }
+   }
+}

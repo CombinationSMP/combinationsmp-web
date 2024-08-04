@@ -1,0 +1,12 @@
+{
+            "type": "origins:attribute",
+            "name": "Strength",
+            "description": "You deal more damage",
+            "modifier": {
+              "operation": "addition",
+              "value":2,
+              "name": "ATK Increase",
+              "attribute": "generic.attack_damage"
+            }
+
+}

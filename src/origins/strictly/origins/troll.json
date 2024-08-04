@@ -1,0 +1,15 @@
+{
+	"powers": [
+        "strictly:lead_belly",
+	"strictly:stocky",
+        "strictly:gargantuan",
+        "strictly:ravenous",
+        "strictly:sluggish",
+        "strictly:xxxl",
+        "strictly:unweildy",
+        "strictly:cunning_hidden"  
+	],
+	"icon": "minecraft:wooden_axe",
+	"impact": 3,
+        "order": 1
+}

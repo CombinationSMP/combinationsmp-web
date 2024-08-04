@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "strictly_origins:damaged_skofnung"
+                }
+            },
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "pmmo_xp_bottles:endurance",
+					"tag": "{amount:6500}"
+                }
+            }
+        ]
+    }
+}

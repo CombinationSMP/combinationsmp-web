@@ -1,0 +1,48 @@
+{
+    "type":"origins:multiple",
+   
+            "name": "Dark Aura",
+            "description": "You are intimidating to villagers, they will refuse to trade with you",
+    "wandinging_trader":{
+        
+          "type": "origins:prevent_entity_use",
+            
+            "bientity_action": {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\": \"The villager quivers as you aproach\", \"color\": \"red\"}"
+                }
+            },
+            "bientity_condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:wandering_trader"
+                }
+            }
+        
+        
+    },
+    "villager":{
+        
+        "type": "origins:prevent_entity_use",
+          
+          "bientity_action": {
+              "type": "origins:actor_action",
+              "action": {
+                  "type": "origins:execute_command",
+                  "command": "title @s actionbar {\"text\": \"The villager quivers as you aproach\", \"color\": \"red\"}"
+              }
+          },
+          "bientity_condition": {
+              "type": "origins:target_condition",
+              "condition": {
+                  "type": "origins:entity_type",
+                  "entity_type": "minecraft:villager"
+              }
+          }
+      
+      
+  }
+}

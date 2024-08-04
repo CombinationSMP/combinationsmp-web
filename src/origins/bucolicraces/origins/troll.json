@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/fourblockstall",
+    "bucolicraces:jumping_modifiers/fourtalljump",
+    "bucolicraces:speed_modifiers/fourtallspeed",
+    "bucolicraces:health_modifiers/twentyheart",
+    "bucolicraces:damage_taken_modifiers/highlyflamable",
+    "bucolicraces:diet_modifiers/carnivore",
+    "bucolicraces:damage_taken_modifiers/poisonresist",
+    "bucolicraces:status_effect_modifiers/greaterregeneration",
+    "bucolicraces:skin_modifiers/troll_skin",
+    "bucolicraces:zmisc_modifiers/dull"
+  ],
+  "icon": "minecraft:poisonous_potato",
+  "impact": 3,
+  "name": "Troll",
+  "description": "Trolls are hearty and solitary creatures, preferring mountainous, rocky terrain. Though not the most intelligent of the origins, trolls gain increased strength and durability… unless they catch fire"
+}

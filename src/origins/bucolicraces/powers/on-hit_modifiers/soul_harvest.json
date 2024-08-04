@@ -1,0 +1,16 @@
+{
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+        "type": "origins:feed",
+         "food": 4,
+         "saturation": 6
+    },
+    "damage_condition": {
+      "type": "origins:amount",
+      "comparison": ">=",
+      "compare_to": 1
+  },
+  "cooldown":1,
+    "name":"Soul harvest",
+    "description":"Damaging others nourishes you"
+}

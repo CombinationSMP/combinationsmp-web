@@ -1,0 +1,35 @@
+{
+    "type": "origins:prevent_item_use",
+    "name": "Elevated Taste",
+    "description": "Due to your pickyness you can only eat cooked food",
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "tag": "bucolicraces:weakstomach"
+              }
+            }
+          ],
+          "inverted": true
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "bucolicraces:food"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "bucolicraces:ignore_diet"
+          },
+          "inverted": true
+        }
+      ]
+    }
+  }

@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "bucolicraces:zmisc_modifiers/werewolf",
+        "bucolicraces:zmisc_modifiers/nosleep",
+        "bucolicraces:ally_modifiers/trading",
+        "bucolicraces:diet_modifiers/rawbuff",
+        "bucolicraces:diet_modifiers/rawdiet",
+        "bucolicraces:size_modifiers/reset"
+    ],
+    "icon": "minecraft:bone",
+    "impact": 3,
+    "name": "Werewolf",
+    "description": "A human infected with lycanthropy.. a blessing or a curse?"
+}

@@ -1,0 +1,27 @@
+{
+	"powers": [
+		"strictly:arrow_weak",
+		"strictly:claustrophobia",
+		"strictly:expert_at_hiding",
+		"strictly:hates_carrots",
+		"strictly:nocturnal_eyes1",
+		"strictly:nocturnal",
+		"strictly:rabies_resistant",
+		"strictly:rabies",
+		"strictly:scurry",
+		"strictly:rabies_cont",
+		"strictly:sharp_claws",
+		"strictly:small_body",
+		"strictly:small_hands",
+		"strictly:thick_fur",
+		"strictly:thick_fur_cont",
+		"strictly:tough_heart",
+		"strictly:tough_stomach",
+		"strictly:trash_lover",
+		"strictly:jump2",
+		"strictly:step_height"
+	],
+	"icon": "minecraft:brown_dye",
+	"order": 10,
+	"impact": 3
+}

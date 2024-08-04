@@ -1,0 +1,9 @@
+{
+    "type": "origins:effect_immunity",
+    "name":"Poison Immunity",
+    "hidden" : true,
+    "description": "You are immune to poison",
+    "effects": [
+      "minecraft:hunger"
+    ]
+  }

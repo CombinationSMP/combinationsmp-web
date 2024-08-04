@@ -1,0 +1,6 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:happy_villager",
+    "frequency": 16,
+    "hidden": true
+  }

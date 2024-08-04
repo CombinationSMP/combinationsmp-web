@@ -1,0 +1,23 @@
+{
+    "powers": [
+      "bucolicraces:diet_modifiers/smalldiet",
+      "bucolicraces:diet_modifiers/waxdiet",
+      "bucolicraces:diet_modifiers/candle/honeycomb",
+      "bucolicraces:diet_modifiers/candle/tallow",
+      "bucolicraces:diet_modifiers/candle/animalfat",
+      "bucolicraces:size_modifiers/adaptivesize",
+      "bucolicraces:skin_modifiers/wick",
+      "bucolicraces:damage_taken_modifiers/wick_water_vulnerability",
+      "bucolicraces:status_effect_modifiers/regen",
+      "bucolicraces:zmisc_modifiers/fireheal",
+      "bucolicraces:damage_taken_modifiers/fire_immunity",
+      "bucolicraces:status_effect_modifiers/firehunger",
+      "bucolicraces:skin_modifiers/honey_particles",
+      "bucolicraces:size_modifiers/reset"
+      ],
+    "icon": "minecraft:candle",
+    "impact": 3,
+    "name": "Candling",
+    "description": "A golem forged from wax and fire! Your fire is the source of your life"
+  }
+  

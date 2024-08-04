@@ -1,0 +1,26 @@
+{
+    "type": "origins:attribute",
+    "name": "Hunter",
+    "description": "You are 30% faster at night",
+    "modifier": {
+      "name": "Tailwind speed bonus",
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.30,
+      "operation": "multiply_base"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:brightness",
+            "comparison": "<",
+            "compare_to": 0.15
+            },
+      
+          {
+          "type": "origins:submerged_in",
+          "fluid": "minecraft:water",
+          "inverted": true
+        }]
+    }
+  }

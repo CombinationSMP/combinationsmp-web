@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"strictly:call_elder",
+		"strictly:shaman_hood",
+		"strictly:withers_immunity",
+		"strictly:wither_explosion",
+		"strictly:slowness",
+		"strictly:skull_wand"
+	],
+	"icon": "orcz:skullwand",
+	"impact": 3,
+	"order": 11
+}

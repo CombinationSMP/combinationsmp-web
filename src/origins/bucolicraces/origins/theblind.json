@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "bucolicraces:zmisc_modifiers/blind",
+    "bucolicraces:zmisc_modifiers/blindvision"
+    ],
+  "icon": "minecraft:coal_block",
+  "impact": 2,
+  "name": "The Blind",
+  "description": "You can't see the world as others do"
+}
+
+
+
+
+
+

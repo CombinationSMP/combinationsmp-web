@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_on_wake_up",
+    "name": "A Chip Off The Old Block",
+    "description": "Ice falls off of you every morning?",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:give",
+          "stack": {
+            "item": "minecraft:ice",
+            "amount":8
+          }
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.chicken.egg"
+        }
+      ]
+    }
+  }

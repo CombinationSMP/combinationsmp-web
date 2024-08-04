@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/twoandahalfblockstall",
+    "bucolicraces:jumping_modifiers/threetalljump",
+    "bucolicraces:damage_taken_modifiers/flamable",
+    "bucolicraces:abilities/bonemeal",
+    "bucolicraces:armor_modifiers/natural_armor",
+    "bucolicraces:zmisc_modifiers/photosynthesis",
+    "bucolicraces:skin_modifiers/happy_villager",
+    "bucolicraces:status_effect_modifiers/regen",
+    "bucolicraces:biome_modifiers/nocold",
+    "bucolicraces:status_effect_modifiers/forestregen",
+    "bucolicraces:ally_modifiers/passive",
+    "bucolicraces:diet_modifiers/honeydiet",
+    "bucolicraces:diet_modifiers/honeybuff"
+  ],
+  "icon": "minecraft:oak_sapling",
+  "impact": 3,
+  "name": "Dryad",
+  "description": "A child of the woods, a dryad is dedicated to protecting her home!"
+}

@@ -1,0 +1,22 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/threequartersize",
+    "bucolicraces:on-hit_modifiers/weak",
+    "bucolicraces:status_effect_modifiers/afraidofsun",
+    "bucolicraces:status_effect_modifiers/nightvision",
+    "bucolicraces:diet_modifiers/sweetsbuff",
+    "bucolicraces:diet_modifiers/stewsbuff",
+    "bucolicraces:recipes/cheapcookie",
+    "bucolicraces:recipes/sugarextract",
+    "bucolicraces:recipes/beetroot",
+    "bucolicraces:recipes/rabbit",
+    "bucolicraces:recipes/mushroom"
+    
+
+
+  ],
+  "icon": "minecraft:cookie",
+  "impact": 2,
+  "name": "Brownie",
+  "description": "You are a small goblin that is a homebody! Going out into the world scares you."
+}

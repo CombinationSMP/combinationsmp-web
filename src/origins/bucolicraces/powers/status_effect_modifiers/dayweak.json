@@ -1,0 +1,27 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 120,
+  "name": "Weakening Rays",
+  "description": "The sun causes you to be weak and slow",
+  "effects": [
+    {
+      "effect": "minecraft:weakness",
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": false
+    },
+    {
+      "effect": "minecraft:slowness",
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": false
+    }
+  ],
+  "condition": {
+    "type": "origins:exposed_to_sun"
+  }
+}

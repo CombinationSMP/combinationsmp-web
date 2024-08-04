@@ -1,0 +1,22 @@
+{
+    "type": "origins:stacking_status_effect",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:luck",
+                "duration": -1,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "minecraft:slowness",
+                "duration": -1,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    }
+}

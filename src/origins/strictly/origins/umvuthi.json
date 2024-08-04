@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"strictly:sunblessing",
+		"strictly:sun_block",
+		"strictly:sun_strength",
+		"strictly:weak_health",
+		"strictly:vegetarian1"
+	],
+	"icon": "mowziesmobs:umvuthana_mask_misery",
+	"impact": 3,
+	"order": 1
+}

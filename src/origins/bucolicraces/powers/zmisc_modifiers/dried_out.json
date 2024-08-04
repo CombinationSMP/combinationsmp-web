@@ -1,0 +1,92 @@
+{
+	"type": "origins:multiple",
+    "name": "Dried Out",
+    "description": "If you stay in the sun too long, you will burn",
+	"stacks": {
+		"type": "origins:resource",
+		"min": -100,
+		"max": 100,
+		"hud_render": {
+			"should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 15
+		}
+	},
+	"visual": {
+		"type": "origins:resource",
+		"min": -100,
+		"max": 100,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"up_down": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:exposed_to_sun"
+                    },
+                    {
+                        "type": "origins:dimension",
+                        "dimension": "minecraft:the_nether"
+                    }
+                ]
+			},
+			"if_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:change_resource",
+						"resource": "*:*_stacks",
+						"change": 1
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "*:*_visual",
+						"change": 1
+					}
+				]
+			},
+			"else_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:change_resource",
+						"resource": "*:*_stacks",
+						"change": -3
+					},
+					{
+						"type": "origins:if_else",
+						"condition": {
+							"type": "origins:resource",
+							"resource": "*:*_stacks",
+							"comparison": "<",
+							"compare_to": 1
+						},
+						"if_action": {
+							"type": "origins:change_resource",
+							"resource": "*:*_visual",
+							"change": -1
+						}
+					}
+				]
+			}
+		},
+		"interval": 20
+	},
+	"output": {
+		"type": "origins:burn",
+        "interval": 20,
+        "burn_duration": 1,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_stacks",
+			"comparison": "==",
+			"compare_to": 100
+		}
+	}
+}

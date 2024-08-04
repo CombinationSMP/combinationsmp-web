@@ -1,0 +1,227 @@
+{
+  "type": "origins:multiple",
+  "name": "Werewolf",
+  "description": "During the day you are an average joe and during the night you change into a ferocious beast that has troubles using tools and weapons, but your claws give you increased unarmed damage!",
+  "day_health": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -4
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun"
+        },
+        {
+          "type": "origins:exposed_to_sky",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "day_size": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "rising_action": {
+      "type": "origins:execute_command",
+      "command": "scale reset @s",
+      "permission_level": 4
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun"
+        },
+        {
+          "type": "origins:exposed_to_sky",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "night_health": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": 10
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+        },
+        {
+          "type": "origins:exposed_to_sky"
+        }
+      ]
+    }
+  },
+  "night_size": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:width 1.4"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:height 1.25"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+        },
+        {
+          "type": "origins:exposed_to_sky"
+        }
+      ]
+    }
+  },
+  "night_attack": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "operation": "addition",
+      "value": 10,
+      "name": "ATK Increase",
+      "attribute": "generic.attack_damage"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+        },
+        {
+          "type": "origins:exposed_to_sky"
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:empty"
+          }
+        }
+      ]
+    }
+  },
+  "no_tools": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effect": {
+      "effect": "minecraft:mining_fatigue",
+      "amplifier": 1,
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": true
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+        },
+        {
+          "type": "origins:exposed_to_sky"
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:empty",
+            "inverted": true
+          }
+        }
+      ]
+    }
+  },
+  "no_swords": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "operation": "addition",
+      "value": -4,
+      "name": "weapon attack decrease",
+      "attribute": "generic.attack_speed"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+        },
+        {
+          "type": "origins:exposed_to_sky"
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "bucolicraces:weapons"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "wolf_hit_sound": {
+    "type": "origins:target_action_on_hit",
+    "cooldown": 200,
+    "entity_action": {
+      "type": "origins:play_sound",
+      "sound": "minecraft:entity.wolf.howl"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+        },
+        {
+          "type": "origins:exposed_to_sky"
+        }
+      ]
+    }
+  },
+  "wolf_pant_sound": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:play_sound",
+      "sound": "minecraft:entity.wolf.pant"
+    },
+    "interval": 500,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+        },
+        {
+          "type": "origins:exposed_to_sky"
+        }
+      ]
+    }
+  }
+}

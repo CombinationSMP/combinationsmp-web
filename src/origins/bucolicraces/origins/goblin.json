@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "bucolicraces:size_modifiers/halfsize",
+    "bucolicraces:health_modifiers/fiveheart",
+    "bucolicraces:skin_modifiers/goblin_skin",
+    "bucolicraces:status_effect_modifiers/nightvision",
+    "bucolicraces:status_effect_modifiers/lucky",
+    "bucolicraces:recipes/gold",
+    "bucolicraces:on-hit_modifiers/weak",
+    "bucolicraces:armor_modifiers/golden"
+
+  ],
+  "icon": "minecraft:gold_nugget",
+  "impact": 1,
+  "name": "Goblin",
+  "description": "Originally from the Fae Wild, Goblins are grotesque little fae creatures. Many wandered into this world to escape fae culture and customs. As a goblin, your one true love is gold, and any queen that tries to take your gold can perish."
+}

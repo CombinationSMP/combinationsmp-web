@@ -1,0 +1,11 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:falling_water",
+    "frequency": 10,
+    "hidden": true,
+    "condition": {
+      "type": "origins:submerged_in",
+        "fluid": "minecraft:water",
+        "inverted":true
+  }
+  }

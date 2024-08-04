@@ -1,0 +1,12 @@
+{
+            "type": "origins:attribute",
+            "name": "Weakness",
+            "description": "You deal less damage",
+            "modifier": {
+              "operation": "addition",
+              "value":-5,
+              "name": "ATK Increase",
+              "attribute": "generic.attack_damage"
+            }
+
+}

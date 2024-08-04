@@ -1,0 +1,24 @@
+{
+    "type": "origins:multiple",
+    "ignore_water": {
+        "type": "origins:ignore_water",
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": "<=",
+            "compare_to": 0.4
+        }
+    },
+    "walk_on_fluid": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water",
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": "<=",
+            "compare_to": 0.4
+        }
+    },
+    "name": "Water Sprinting",
+    "description": "You are able to walk and sprint on water."
+}

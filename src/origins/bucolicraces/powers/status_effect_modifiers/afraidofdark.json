@@ -1,0 +1,42 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 120,
+  "name": "Afraid Of The Dark",
+  "description": "You cant see in the dark but you are faster!",
+  "effects": [
+    {
+      "effect": "minecraft:blindness",
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": true
+    },
+    {
+      "effect": "minecraft:speed",
+      "amplifier": 2,
+      "show_particles": false,
+      "show_icon": false,
+      "is_ambient": true
+    }
+  ],
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:light_level",
+          "light_type": "block",
+          "comparison": "<",
+          "compare_to": 5
+        }
+      },
+      {
+        "type": "origins:exposed_to_sun",
+        "inverted": true
+      }
+    ]
+  }
+}

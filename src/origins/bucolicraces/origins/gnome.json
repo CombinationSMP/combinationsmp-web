@@ -1,0 +1,21 @@
+{
+  "powers": [
+      "bucolicraces:diet_modifiers/vegetarian",
+      "bucolicraces:size_modifiers/quartersize",
+      "bucolicraces:health_modifiers/fiveheart",
+      "bucolicraces:status_effect_modifiers/fast",
+      "bucolicraces:ally_modifiers/passive",
+      "bucolicraces:abilities/rightheal"
+
+    ],
+  "icon": "minecraft:grass",
+  "impact": 1,
+  "name": "Gnome",
+  "description": "You are a small and fast being!"
+}
+
+
+
+
+
+

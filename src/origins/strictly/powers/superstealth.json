@@ -1,0 +1,11 @@
+{
+	"type": "origins:invisibility",
+	"render_armor": false,
+	"condition": {
+		"type": "origins:sneaking"
+	},
+	"entity_action": {
+		"type": "origins:exhaust",
+		"amount": 0.5
+	}
+}
