@@ -1,8 +1,9 @@
 import { EmbedBuilder, WebhookClient } from "discord.js";
-import type { Handler } from "@/types";
+import { Collections, PBApplication, type Handler } from "@/types";
 import { env } from "@/env";
 import { NextResponse } from "next/server";
 import { NextURL } from "next/dist/server/web/next-url";
+import { getPbAdmin } from "@/pb-admin";
 
 //https://discord.com/api/webhooks/1266554549980889109/LzGMPHLUVf4VbBMqWgXjRBiq7EF18sgp6Pvfd4WUsP9YFRQFukJHi1bB08OaztpwZc2b
 const client = new WebhookClient({ id: env.WEBHOOK_ID, token: env.WEBHOOK_TOKEN });
@@ -12,6 +13,23 @@ export const POST: Handler = async (req) => {
   const form = await req.formData();
 
   console.log(form);
+
+  const application: PBApplication = {
+    accepted: "tbd",
+    name: form.get("name")?.toString() ?? "N/A",
+    // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+    age: parseInt(form.get("age")?.toString() || "32204"),
+    discordUsername: form.get("discord")?.toString() ?? "N/A",
+    minecraftUsername: form.get("minecraft")?.toString() ?? "N/A",
+    javaEdition: form.get("mcjava")?.toString() === "on",
+    contentCreator: form.get("social")?.toString?.(),
+    activities: form.get("activities")?.toString() ?? "N/A",
+    active: form.get("active")?.toString() === "on",
+    timezone: form.get("timezone")?.toString() ?? "N/A",
+    whatCanYouBring: form.get("sentences")?.toString() ?? "N/A",
+    referrer: form.get("referral")?.toString?.(),
+    discordApplicationMessageId: "",
+  };
 
   const embed = new EmbedBuilder()
     .setTitle("New Whitelist Application")
@@ -60,7 +78,13 @@ export const POST: Handler = async (req) => {
     ])
     .setTimestamp(Date.now());
 
-  await client.send({ embeds: [embed] });
+  const message = await client.send({ embeds: [embed] });
+
+  application.discordApplicationMessageId = message.id;
+
+  const pb = await getPbAdmin();
+
+  await pb.collection(Collections.Apps).create<PBApplication>(application);
 
   let redirectUrl: NextURL;
 
