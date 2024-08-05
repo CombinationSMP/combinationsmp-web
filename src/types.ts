@@ -8,6 +8,12 @@ export enum Collections {
   Apps = "apps",
 }
 
+export type PBRecord<T> = T & {
+  id: string;
+  created: string;
+  updated: string;
+};
+
 export interface PBApplication {
   accepted: "true" | "false" | "tbd";
   deniedReason?: string;

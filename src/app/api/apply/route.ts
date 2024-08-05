@@ -1,5 +1,5 @@
 import { EmbedBuilder, WebhookClient } from "discord.js";
-import type { PBApplication, Handler } from "@/types";
+import type { PBApplication, Handler, PBRecord } from "@/types";
 import { Collections } from "@/types";
 import { env } from "@/env";
 import { NextResponse } from "next/server";
@@ -14,6 +14,8 @@ export const POST: Handler = async (req) => {
   const form = await req.formData();
 
   console.log(form);
+
+  const pb = await getPbAdmin();
 
   const application: PBApplication = {
     accepted: "tbd",
@@ -32,60 +34,55 @@ export const POST: Handler = async (req) => {
     discordApplicationMessageId: "",
   };
 
+  const pbResponse = await pb.collection(Collections.Apps).create<PBRecord<PBApplication>>(application);
+
   const embed = new EmbedBuilder()
     .setTitle("New Whitelist Application")
     .setColor("#412C46")
     .setFields([
-      { name: "1. What is your preferred name?", value: form.get("name")?.toString() ?? "N/A" },
-      { name: "2. How old are you?", value: form.get("age")?.toString() ?? "N/A" },
+      { name: "1. What is your preferred name?", value: application.name },
+      { name: "2. How old are you?", value: application.age.toString() },
       {
         name: "3. What is your Discord username?",
-        value: form.get("discord")?.toString() ?? "N/A",
+        value: application.discordUsername,
       },
       {
         name: "4. What is your Minecraft username?",
-        value: form.get("minecraft")?.toString() ?? "N/A",
+        value: application.minecraftUsername,
       },
       {
         name: "5. Do you have Minecraft Java Edition?",
-        value: form.get("mcjava")?.toString() === "on" ? "Yes" : "No",
+        value: application.javaEdition ? "Yes" : "No",
       },
       {
         name: "6. If you're a content creator, what platforms would you post the CombinationSMP on? (Please provide links)",
-        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-        value: form.get("social")?.toString() || "N/A",
+        value: application.contentCreator ?? "N/A",
       },
       {
         name: "7. What activities do you do most in Minecraft?",
-        value: form.get("activities")?.toString() ?? "N/A",
+        value: application.activities,
       },
       {
         name: "8. Are you able to be active at least once a week?",
-        value: form.get("active")?.toString() === "on" ? "Yes" : "No",
+        value: application.active ? "Yes" : "No",
       },
       {
         name: "9. What timezone are you in?",
-        value: form.get("timezone")?.toString() ?? "N/A",
+        value: application.timezone,
       },
       {
         name: "10. What can you bring to our SMP? Please write at least 2 sentences.",
-        value: form.get("sentences")?.toString() ?? "N/A",
+        value: application.whatCanYouBring,
       },
       {
         name: "11. How'd you hear about us?",
         // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-        value: form.get("referral")?.toString() || "N/A",
+        value: application.referrer ?? "N/A",
       },
     ])
-    .setTimestamp(Date.now());
+    .setFooter({ text: `Application ID: ${pbResponse.id}` });
 
-  const message = await client.send({ embeds: [embed] });
-
-  application.discordApplicationMessageId = message.id;
-
-  const pb = await getPbAdmin();
-
-  await pb.collection(Collections.Apps).create<PBApplication>(application);
+  await client.send({ embeds: [embed] });
 
   let redirectUrl: NextURL;
 
