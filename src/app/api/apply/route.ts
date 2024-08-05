@@ -1,5 +1,6 @@
 import { EmbedBuilder, WebhookClient } from "discord.js";
-import { Collections, PBApplication, type Handler } from "@/types";
+import type { PBApplication, Handler } from "@/types";
+import { Collections } from "@/types";
 import { env } from "@/env";
 import { NextResponse } from "next/server";
 import { NextURL } from "next/dist/server/web/next-url";
