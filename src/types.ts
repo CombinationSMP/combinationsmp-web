@@ -32,5 +32,4 @@ export interface PBApplication {
   whatCanYouBring: string;
   referrer?: string;
   referrerMember?: string;
-  discordApplicationMessageId: string;
 }

@@ -25,14 +25,15 @@ export const POST: Handler = async (req) => {
     discordUsername: form.get("discord")?.toString() ?? "N/A",
     minecraftUsername: form.get("minecraft")?.toString() ?? "N/A",
     javaEdition: form.get("mcjava")?.toString() === "on",
-    contentCreator: form.get("social")?.toString?.(),
+    contentCreator: form.get("social")?.toString?.() === "" ? undefined : form.get("social")?.toString?.(),
     activities: form.get("activities")?.toString() ?? "N/A",
     active: form.get("active")?.toString() === "on",
     timezone: form.get("timezone")?.toString() ?? "N/A",
     whatCanYouBring: form.get("sentences")?.toString() ?? "N/A",
-    referrer: form.get("referral")?.toString?.(),
-    discordApplicationMessageId: "",
+    referrer: form.get("referral")?.toString?.() === "" ? undefined : form.get("referral")?.toString?.(),
   };
+
+  console.log(application);
 
   const pbResponse = await pb.collection(Collections.Apps).create<PBRecord<PBApplication>>(application);
 
