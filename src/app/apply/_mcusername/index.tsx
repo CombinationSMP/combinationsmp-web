@@ -75,7 +75,15 @@ const MCUsername: React.FC<IProps> = ({ index }) => {
                 imageRendering: "pixelated",
               }}
             />
-          ) : loadingUsernameResponse ? (
+          ) : !loadingUsernameResponse && valueModified ? (
+            <Image
+              src="/assets/invalid.svg"
+              alt="Invalid username"
+              width={20}
+              height={20}
+              style={{ width: 20, height: "auto", aspectRatio: 1 }}
+            />
+          ) : (
             <Image
               src={`https://mc-heads.net/avatar/853c80ef-3c37-49fd-aa49-938b674adae6/8`}
               width={8}
@@ -88,14 +96,6 @@ const MCUsername: React.FC<IProps> = ({ index }) => {
                 imageRendering: "pixelated",
                 filter: "brightness(0.5)",
               }}
-            />
-          ) : (
-            <Image
-              src="/assets/invalid.svg"
-              alt="Invalid username"
-              width={20}
-              height={20}
-              style={{ width: 20, height: "auto", aspectRatio: 1 }}
             />
           )
         }
