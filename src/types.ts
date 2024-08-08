@@ -47,3 +47,40 @@ export type StoredOriginLang = Record<string, string>;
 export type ImageImport = {
   default: StaticImageData;
 };
+=======
+export enum Collections {
+  Apps = "apps",
+}
+
+export type PBRecord<T> = T & {
+  id: string;
+  created: string;
+  updated: string;
+};
+
+export interface PBApplication {
+  accepted: "true" | "false" | "tbd";
+  deniedReason?: string;
+  name: string;
+  age: number;
+  discordName?: string;
+  discordUsername: string;
+  discordId?: string;
+  minecraftUsername: string;
+  minecraftUuid?: string;
+  javaEdition: boolean;
+  contentCreator?: string;
+  activities: string;
+  active: boolean;
+  timezone: string;
+  whatCanYouBring: string;
+  referrer?: string;
+  referrerMember?: string;
+}
+
+export interface MCAPIUsernameToUUID {
+  name: string;
+  id: string;
+  legacy?: boolean;
+  demo?: boolean;
+}

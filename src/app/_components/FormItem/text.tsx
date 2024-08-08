@@ -3,37 +3,51 @@ import type { InputHTMLAttributes } from "react";
 
 interface IProps {
   placeholder: string;
-  name: string;
+  name?: string;
   required?: boolean;
+  maxLength?: number;
   similarTextType?: InputHTMLAttributes<HTMLInputElement>["type"];
   props?: JSX.IntrinsicElements["input"];
   multiline?: boolean;
   multilineProps?: JSX.IntrinsicElements["textarea"];
+  leftAdornment?: JSX.Element;
+  rightAdornment?: JSX.Element;
 }
 
 const TextInput: React.FC<IProps> = ({
   placeholder,
   name,
   required,
+  maxLength,
   similarTextType,
   props,
   multiline,
   multilineProps,
+  leftAdornment,
+  rightAdornment,
 }) => {
   if (multiline) {
     return (
-      <textarea required={required} placeholder={placeholder} name={name} className={styles.text} {...multilineProps} />
+      <div className={styles.container}>
+        {leftAdornment}
+        <textarea maxLength={maxLength} required={required} placeholder={placeholder} name={name} {...multilineProps} />
+        {rightAdornment}
+      </div>
     );
   }
   return (
-    <input
-      required={required}
-      type={similarTextType ?? "text"}
-      placeholder={placeholder}
-      name={name}
-      className={styles.text}
-      {...props}
-    />
+    <div className={styles.container}>
+      {leftAdornment}
+      <input
+        required={required}
+        maxLength={maxLength}
+        type={similarTextType ?? "text"}
+        placeholder={placeholder}
+        name={name}
+        {...props}
+      />
+      {rightAdornment}
+    </div>
   );
 };
 
