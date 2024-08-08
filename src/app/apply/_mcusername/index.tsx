@@ -8,7 +8,6 @@ import { useDebounce } from "use-debounce";
 import type { MCAPIUsernameToUUID } from "@/types";
 import getUsername from "./getUsername";
 import Image from "next/image";
-import invalidPfp from "../../../../public/assets/invalid.svg";
 
 interface IProps {
   index: number;
