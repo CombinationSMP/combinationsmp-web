@@ -1,8 +1,0 @@
-name: deploy project
-on: [pull_request, push]
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - run: "curl --request GET '${{ secrets.COOLIFY_WEBHOOK }}' --header 'Authorization: Bearer ${{ secrets.COOLIFY_TOKEN }}'"

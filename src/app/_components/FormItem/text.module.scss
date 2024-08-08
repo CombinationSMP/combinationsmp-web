@@ -1,7 +1,6 @@
 @import "../../../styles/vars.module.scss";
 
-.text {
-  all: unset;
+.container {
   color: #ffffff;
   background-color: $tertiary;
   border-radius: 10px;
@@ -9,6 +8,9 @@
   transition: background-color 0.2s;
   font-size: 1.25rem;
   width: calc(100% - 1rem);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   &::placeholder {
     color: $secondary;
@@ -18,7 +20,18 @@
     background-color: darken($tertiary, 3%);
   }
 
-  &:focus {
+  input,
+  textarea {
+    all: unset;
+    color: #ffffff;
+    width: 100%;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  &:has(> input:focus, textarea:focus) {
     background-color: darken($tertiary, 6%);
   }
 }

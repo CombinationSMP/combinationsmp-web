@@ -24,6 +24,7 @@ export const POST: Handler = async (req) => {
     age: parseInt(form.get("age")?.toString() || "32204"),
     discordUsername: form.get("discord")?.toString() ?? "N/A",
     minecraftUsername: form.get("minecraft")?.toString() ?? "N/A",
+    minecraftUuid: form.get("mcuuid")?.toString?.(),
     javaEdition: form.get("mcjava")?.toString() === "on",
     contentCreator: form.get("social")?.toString?.() === "" ? undefined : form.get("social")?.toString?.(),
     activities: form.get("activities")?.toString() ?? "N/A",
@@ -71,10 +72,23 @@ export const POST: Handler = async (req) => {
         name: "9. What timezone are you in?",
         value: application.timezone,
       },
-      {
-        name: "10. What can you bring to our SMP? Please write at least 2 sentences.",
-        value: application.whatCanYouBring,
-      },
+      ...(application.whatCanYouBring.length > 1024
+        ? [
+            {
+              name: "10. What can you bring to our SMP? Please write at least 2 sentences.",
+              value: application.whatCanYouBring.substring(0, 1024),
+            },
+            {
+              name: "10 contd.",
+              value: application.whatCanYouBring.substring(1024),
+            },
+          ]
+        : [
+            {
+              name: "10. What can you bring to our SMP? Please write at least 2 sentences.",
+              value: application.whatCanYouBring,
+            },
+          ]),
       {
         name: "11. How'd you hear about us?",
         // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing

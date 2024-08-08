@@ -16,6 +16,13 @@ const config = {
 
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "mc-heads.net",
+      },
+    ],
+  },
 };
 
 export default config;

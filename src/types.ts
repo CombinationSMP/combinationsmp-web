@@ -33,3 +33,10 @@ export interface PBApplication {
   referrer?: string;
   referrerMember?: string;
 }
+
+export interface MCAPIUsernameToUUID {
+  name: string;
+  id: string;
+  legacy?: boolean;
+  demo?: boolean;
+}

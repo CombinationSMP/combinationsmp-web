@@ -4,6 +4,7 @@ import FormItem from "../_components/FormItem";
 import TextInput from "../_components/FormItem/text";
 import palette from "@/styles/vars.module.scss";
 import SubmitButton from "../_components/FormItem/submit";
+import MCUsername from "./_mcusername";
 
 const Apply: NextPage = () => {
   return (
@@ -26,17 +27,15 @@ const Apply: NextPage = () => {
       </p>
       <form style={{ width: "100%" }} method="post" action="/api/apply">
         <FormItem required question="What is your preferred name?" index={0} key={0}>
-          <TextInput required placeholder="Jane Doe" name="name" />
+          <TextInput required placeholder="Jane Doe" maxLength={1024} name="name" />
         </FormItem>
         <FormItem required question="How old are you?" index={1} key={1}>
           <TextInput required placeholder="13+" name="age" similarTextType="number" props={{ min: 13 }} />
         </FormItem>
         <FormItem required question="What is your Discord username?" index={2} key={2}>
-          <TextInput required placeholder="wumpus0000" name="discord" />
+          <TextInput required placeholder="wumpus0000" name="discord" maxLength={32} />
         </FormItem>
-        <FormItem required question="What is your Minecraft username?" index={3} key={3}>
-          <TextInput required placeholder="jeb_" name="minecraft" />
-        </FormItem>
+        <MCUsername index={3} key={3} />
         <FormItem required question="Do you have Minecraft Java Edition?" index={4} key={4}>
           <input required type="radio" id="mcjavayes" name="mcjava" />
           <label htmlFor="mcjavayes">Yes</label>
@@ -58,11 +57,12 @@ const Apply: NextPage = () => {
             multiline
             placeholder="TikTok, YouTube, Instagram Reels, etc."
             name="social"
+            maxLength={1024}
             multilineProps={{ rows: 2 }}
           />
         </FormItem>
         <FormItem required question="What activities do you do most in Minecraft?" index={6} key={6}>
-          <TextInput required placeholder="Building, redstone, etc." name="activities" />
+          <TextInput required placeholder="Building, redstone, etc." name="activities" maxLength={1024} />
         </FormItem>
         <FormItem required question="Are you able to be active at least once a week?" index={7} key={7}>
           <input required type="radio" id="active-yes" name="active" />
@@ -71,7 +71,7 @@ const Apply: NextPage = () => {
           <label htmlFor="active-no">No</label>
         </FormItem>
         <FormItem required question="What timezone are you in?" index={8} key={8}>
-          <TextInput required placeholder="PST, MST, CDT, EST, etc." name="timezone" />
+          <TextInput required placeholder="PST, MST, CDT, EST, etc." name="timezone" maxLength={32} />
         </FormItem>
         <FormItem
           required
@@ -84,13 +84,14 @@ const Apply: NextPage = () => {
             multiline
             placeholder="Laborum exercitation consequat nostrud et sint ipsum duis."
             name="sentences"
+            maxLength={2048}
             multilineProps={{
               rows: 6,
             }}
           />
         </FormItem>
         <FormItem question="How'd you hear about us?" index={10} key={10}>
-          <TextInput placeholder="TikTok, Instagram, Disboard, etc." name="referral" />
+          <TextInput placeholder="TikTok, Instagram, Disboard, etc." name="referral" maxLength={1024} />
         </FormItem>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <SubmitButton>Submit</SubmitButton>
