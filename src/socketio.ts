@@ -39,7 +39,24 @@ export const startWSServer = async () => {
 
   const ChatMessage = Chat("1.19.2");
   const parseAnsi = new ANSIParser({
-    colors: {},
+    colors: {
+      30: "#000000",
+      34: "#0000AA",
+      32: "#00AA00",
+      36: "#00AAAA",
+      31: "#AA0000",
+      35: "#AA00AA",
+      33: "#FFAA00",
+      37: "#AAAAAA",
+      90: "#555555",
+      94: "#5555FF",
+      92: "#55FF55",
+      96: "#55FFFF",
+      91: "#FF5555",
+      95: "#FF55FF",
+      93: "#FFFF55",
+      97: "#FFFFFF",
+    },
   });
 
   const tail = new Tail(env.SERVER_LOG_LOCATION, { flushAtEOF: true });
