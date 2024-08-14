@@ -75,7 +75,15 @@ const Apply: NextPage = () => {
         </FormItem>
         <FormItem
           required
-          question="What can you bring to our SMP? Please write at least 2 sentences."
+          question={
+            <>
+              What can you bring to our SMP?
+              <br />
+              How do you think you can add to the community?
+              <br />
+              <strong>Please write at least 2 sentences.</strong>
+            </>
+          }
           index={9}
           key={9}
         >
