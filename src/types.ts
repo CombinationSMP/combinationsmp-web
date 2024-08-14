@@ -2,9 +2,11 @@ import type { NextRequest, NextResponse } from "next/server";
 
 export type Layout = React.FC<React.PropsWithChildren>;
 
-export type Handler = (req: NextRequest) => NextResponse | Promise<NextResponse>;
+export type Handler = (req: NextRequest) => NextResponse | Response | Promise<NextResponse | Response>;
 
 export enum Collections {
+  Admins = "admins",
+  AdminCreationCodes = "admin_creation_codes",
   Apps = "apps",
 }
 
@@ -39,4 +41,15 @@ export interface MCAPIUsernameToUUID {
   id: string;
   legacy?: boolean;
   demo?: boolean;
+}
+
+export interface Admin {
+  username: string;
+  email: string;
+  emailVisibility: boolean;
+  verified: boolean;
+}
+
+export interface AdminCreationCode {
+  used: boolean;
 }

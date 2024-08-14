@@ -23,6 +23,17 @@ const config = {
       },
     ],
   },
+  experimental: {
+    instrumentationHook: true,
+  },
+  rewrites: async () => {
+    return [
+      {
+        source: "/api/ws/console",
+        destination: "http://localhost:3001",
+      },
+    ];
+  },
 };
 
 export default config;

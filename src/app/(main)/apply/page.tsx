@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import containerStyles from "@/styles/container.module.scss";
-import FormItem from "../_components/FormItem";
-import TextInput from "../_components/FormItem/text";
+import FormItem from "../../_components/FormItem";
+import TextInput from "../../_components/FormItem/text";
 import palette from "@/styles/vars.module.scss";
-import SubmitButton from "../_components/FormItem/submit";
+import SubmitButton from "../../_components/FormItem/submit";
 import MCUsername from "./_mcusername";
 
 const Apply: NextPage = () => {

@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import logo from "@/../public/assets/logo.png";
 import palette from "@/styles/vars.module.scss";
 import Image from "next/image";
-import Button from "./_components/button";
+import Button from "../_components/button";
 import containerStyles from "@/styles/container.module.scss";
 
 const Home: NextPage = () => {

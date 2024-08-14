@@ -2,8 +2,8 @@
 
 import type { ChangeEventHandler } from "react";
 import { useEffect, useState } from "react";
-import FormItem from "../../_components/FormItem";
-import TextInput from "../../_components/FormItem/text";
+import FormItem from "../../../_components/FormItem";
+import TextInput from "../../../_components/FormItem/text";
 import { useDebounce } from "use-debounce";
 import type { MCAPIUsernameToUUID } from "@/types";
 import getUsername from "./getUsername";
