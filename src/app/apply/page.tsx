@@ -90,7 +90,7 @@ const Apply: NextPage = () => {
           <TextInput
             required
             multiline
-            placeholder="Laborum exercitation consequat nostrud et sint ipsum duis."
+            placeholder="Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos facilisi nascetur per consectetur quis urna."
             name="sentences"
             maxLength={2048}
             multilineProps={{
