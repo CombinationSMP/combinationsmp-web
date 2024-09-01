@@ -75,7 +75,7 @@ export const POST: Handler = async (req) => {
       ...(application.whatCanYouBring.length > 1024
         ? [
             {
-              name: "10. What can you bring to our SMP? Please write at least 2 sentences.",
+              name: "10. What can you bring to our SMP? How do you think you can add to the community? **Please write at least 2 sentences.**",
               value: application.whatCanYouBring.substring(0, 1024),
             },
             {
@@ -85,7 +85,7 @@ export const POST: Handler = async (req) => {
           ]
         : [
             {
-              name: "10. What can you bring to our SMP? Please write at least 2 sentences.",
+              name: "10. What can you bring to our SMP? How do you think you can add to the community? **Please write at least 2 sentences.**",
               value: application.whatCanYouBring,
             },
           ]),

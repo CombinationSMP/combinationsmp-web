@@ -75,14 +75,22 @@ const Apply: NextPage = () => {
         </FormItem>
         <FormItem
           required
-          question="What can you bring to our SMP? Please write at least 2 sentences."
+          question={
+            <>
+              What can you bring to our SMP?
+              <br />
+              How do you think you can add to the community?
+              <br />
+              <strong>Please write at least 2 sentences.</strong>
+            </>
+          }
           index={9}
           key={9}
         >
           <TextInput
             required
             multiline
-            placeholder="Laborum exercitation consequat nostrud et sint ipsum duis."
+            placeholder="Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos facilisi nascetur per consectetur quis urna."
             name="sentences"
             maxLength={2048}
             multilineProps={{
