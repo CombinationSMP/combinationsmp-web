@@ -13,8 +13,6 @@ export const POST: Handler = async (req) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const form = await req.formData();
 
-  console.log(form);
-
   const pb = await getPbAdmin();
 
   const application: PBApplication = {
@@ -33,8 +31,6 @@ export const POST: Handler = async (req) => {
     whatCanYouBring: form.get("sentences")?.toString() ?? "N/A",
     referrer: form.get("referral")?.toString?.() === "" ? undefined : form.get("referral")?.toString?.(),
   };
-
-  console.log(application);
 
   const pbResponse = await pb.collection(Collections.Apps).create<PBRecord<PBApplication>>(application);
 
@@ -99,14 +95,7 @@ export const POST: Handler = async (req) => {
 
   await client.send({ embeds: [embed] });
 
-  let redirectUrl: NextURL;
-
-  if (env.NODE_ENV === "production") {
-    redirectUrl = new NextURL(`https://${env.NEXT_PUBLIC_HOST}/apply/submitted`);
-  } else {
-    redirectUrl = req.nextUrl.clone();
-    redirectUrl.pathname = "/apply/submitted";
-  }
+  const redirectUrl = new NextURL(`${env.NEXT_PUBLIC_HOST}/apply/submitted`);
 
   return NextResponse.redirect(redirectUrl);
 };

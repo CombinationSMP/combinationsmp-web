@@ -55,6 +55,7 @@ const getOrigin = async (originId: string): Promise<APIFullOrigin> => {
   }
 
   return {
+    id: originId,
     name: originRootFile.name ?? langFile[`origin.${originId.replaceAll(":", ".")}.name`] ?? originId,
     icon,
     impact: originRootFile.impact,

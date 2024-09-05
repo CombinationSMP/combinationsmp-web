@@ -17,4 +17,17 @@
   &.mousedown {
     background-color: darken($tertiary, 10%) !important;
   }
+
+  &.disabled {
+    cursor: not-allowed;
+    background-color: rgba(128, 128, 128, 0.5);
+
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.5);
+    }
+
+    &.mousedown {
+      background-color: rgba(128, 128, 128, 0.5);
+    }
+  }
 }

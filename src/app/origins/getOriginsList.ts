@@ -28,6 +28,7 @@ const getOriginsList = async (): Promise<APIPartialOrigin[]> => {
         try {
           const origin = await getOrigin(originId);
           return {
+            id: originId,
             name: origin.name,
             description: origin.description,
             icon: origin.icon,

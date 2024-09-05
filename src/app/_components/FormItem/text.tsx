@@ -1,5 +1,6 @@
+import classNames from "classnames";
 import styles from "./text.module.scss";
-import type { InputHTMLAttributes } from "react";
+import type { CSSProperties, InputHTMLAttributes } from "react";
 
 interface IProps {
   placeholder: string;
@@ -12,6 +13,8 @@ interface IProps {
   multilineProps?: JSX.IntrinsicElements["textarea"];
   leftAdornment?: JSX.Element;
   rightAdornment?: JSX.Element;
+  containerStyle?: CSSProperties;
+  disabled?: boolean;
 }
 
 const TextInput: React.FC<IProps> = ({
@@ -25,20 +28,30 @@ const TextInput: React.FC<IProps> = ({
   multilineProps,
   leftAdornment,
   rightAdornment,
+  containerStyle,
+  disabled,
 }) => {
   if (multiline) {
     return (
-      <div className={styles.container}>
+      <div className={classNames(styles.container, disabled ? styles.disabled : undefined)} style={containerStyle}>
         {leftAdornment}
-        <textarea maxLength={maxLength} required={required} placeholder={placeholder} name={name} {...multilineProps} />
+        <textarea
+          disabled={disabled}
+          maxLength={maxLength}
+          required={required}
+          placeholder={placeholder}
+          name={name}
+          {...multilineProps}
+        />
         {rightAdornment}
       </div>
     );
   }
   return (
-    <div className={styles.container}>
+    <div className={classNames(styles.container, disabled ? styles.disabled : undefined)} style={containerStyle}>
       {leftAdornment}
       <input
+        disabled={disabled}
         required={required}
         maxLength={maxLength}
         type={similarTextType ?? "text"}

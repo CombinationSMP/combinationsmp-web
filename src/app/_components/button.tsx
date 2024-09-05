@@ -6,18 +6,26 @@ import classNames from "classnames";
 import { useRouter } from "next/navigation";
 
 interface IProps {
+  disabled?: boolean;
   href?: string;
   openInNewTab?: boolean;
   onClick?: DOMAttributes<HTMLButtonElement>["onClick"];
   style?: HTMLAttributes<HTMLButtonElement>["style"];
 }
 
-const Button: React.FC<React.PropsWithChildren<IProps>> = ({ children, href, openInNewTab, onClick, style }) => {
+const Button: React.FC<React.PropsWithChildren<IProps>> = ({
+  disabled,
+  children,
+  href,
+  openInNewTab,
+  onClick,
+  style,
+}) => {
   const [clicked, setClicked] = useState(false);
   const router = useRouter();
 
   const openHref = () => {
-    if (href) {
+    if (!disabled && href) {
       if (openInNewTab) {
         open(href, "_blank");
       } else {
@@ -28,7 +36,7 @@ const Button: React.FC<React.PropsWithChildren<IProps>> = ({ children, href, ope
 
   const onMouseDown = () => {
     setClicked(true);
-    if (href) {
+    if (!disabled && href) {
       router.prefetch(href);
     }
   };
@@ -39,7 +47,8 @@ const Button: React.FC<React.PropsWithChildren<IProps>> = ({ children, href, ope
 
   return (
     <button
-      className={classNames(styles.btn, clicked ? styles.mousedown : undefined)}
+      disabled={disabled}
+      className={classNames(styles.btn, clicked ? styles.mousedown : undefined, disabled ? styles.disabled : undefined)}
       style={style}
       onClick={href ? openHref : onClick}
       onMouseDown={onMouseDown}

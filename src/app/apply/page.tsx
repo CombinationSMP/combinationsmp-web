@@ -35,7 +35,9 @@ const Apply: NextPage = () => {
         <FormItem required question="What is your Discord username?" index={2} key={2}>
           <TextInput required placeholder="wumpus0000" name="discord" maxLength={32} />
         </FormItem>
-        <MCUsername index={3} key={3} />
+        <FormItem required question="What is your Minecraft username?" index={3} key={3}>
+          <MCUsername />
+        </FormItem>
         <FormItem required question="Do you have Minecraft Java Edition?" index={4} key={4}>
           <input required type="radio" id="mcjavayes" name="mcjava" />
           <label htmlFor="mcjavayes">Yes</label>

@@ -1,8 +1,7 @@
 "use client";
 
-import type { ChangeEventHandler } from "react";
+import type { ChangeEventHandler, CSSProperties } from "react";
 import { useEffect, useState } from "react";
-import FormItem from "../../_components/FormItem";
 import TextInput from "../../_components/FormItem/text";
 import { useDebounce } from "use-debounce";
 import type { MCAPIUsernameToUUID } from "@/types";
@@ -10,17 +9,18 @@ import getUsername from "./getUsername";
 import Image from "next/image";
 
 interface IProps {
-  index: number;
+  style?: CSSProperties;
+  errorMessage?: JSX.Element;
+  debouncedChange?: (value: string, valid: boolean) => void;
+  disabled?: boolean;
 }
 
-const MCUsername: React.FC<IProps> = ({ index }) => {
+const MCUsername: React.FC<IProps> = ({ debouncedChange, errorMessage, style, disabled }) => {
   const [value, setValue] = useState("");
   const [debouncedValue] = useDebounce(value, 500);
   const [usernameResponse, setUsernameResponse] = useState<MCAPIUsernameToUUID | false>(false);
   const [loadingUsernameResponse, setLoadingUsernameResponse] = useState(false);
   const [valueModified, setValueModified] = useState(false);
-
-  console.log(usernameResponse);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -33,15 +33,25 @@ const MCUsername: React.FC<IProps> = ({ index }) => {
           return;
         }
 
+        if (debouncedChange) {
+          debouncedChange(res === false ? debouncedValue : res.name, res !== false);
+        }
+
         setUsernameResponse(res);
         setLoadingUsernameResponse(false);
       })();
+      return;
+    }
+
+    setUsernameResponse(false);
+    if (debouncedChange) {
+      debouncedChange("", false);
     }
 
     return () => {
       abortController.abort();
     };
-  }, [debouncedValue]);
+  }, [debouncedChange, debouncedValue]);
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (evt) => {
     setValueModified(true);
@@ -49,18 +59,23 @@ const MCUsername: React.FC<IProps> = ({ index }) => {
 
     if (evt.target.value === "") {
       setUsernameResponse(false);
+      if (debouncedChange) {
+        debouncedChange("", false);
+      }
     }
 
     setValue(evt.target.value);
   };
 
   return (
-    <FormItem required question="What is your Minecraft username?" index={index}>
+    <>
       <TextInput
         required
         placeholder="jeb_"
         maxLength={16}
+        disabled={disabled}
         props={{ onChange: handleChange }}
+        containerStyle={style}
         leftAdornment={
           usernameResponse ? (
             <Image
@@ -102,17 +117,21 @@ const MCUsername: React.FC<IProps> = ({ index }) => {
       />
       {!usernameResponse && valueModified && !loadingUsernameResponse ? (
         <p style={{ color: "#ff5555" }}>
-          Invalid username! Please double check your
-          <br />
-          username on the{" "}
-          <a
-            href="https://www.minecraft.net/en-us/msaprofile/mygames/editprofile#:~:text=Current%20Java%20Profile%20Name:"
-            target="_blank"
-            style={{ textDecoration: "underline" }}
-          >
-            Minecraft account page
-          </a>
-          .
+          {errorMessage ?? (
+            <>
+              Invalid username! Please double check your
+              <br />
+              username on the{" "}
+              <a
+                href="https://www.minecraft.net/en-us/msaprofile/mygames/editprofile#:~:text=Current%20Java%20Profile%20Name:"
+                target="_blank"
+                style={{ textDecoration: "underline" }}
+              >
+                Minecraft account page
+              </a>
+              .
+            </>
+          )}
         </p>
       ) : (
         <></>
@@ -125,7 +144,7 @@ const MCUsername: React.FC<IProps> = ({ index }) => {
         value={usernameResponse === false ? "" : usernameResponse.name}
       />
       <input type="text" hidden name="mcuuid" required value={usernameResponse === false ? "" : usernameResponse.id} />
-    </FormItem>
+    </>
   );
 };
 

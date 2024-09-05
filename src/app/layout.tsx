@@ -26,7 +26,7 @@ const RootLayout: Layout = ({ children }) => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            overflowY: "scroll",
+            overflowY: "auto",
             padding: "2rem 0",
           }}
         >

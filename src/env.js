@@ -12,6 +12,8 @@ export const env = createEnv({
     WEBHOOK_TOKEN: z.string(),
     POCKETBASE_ADMIN_EMAIL: z.string().email(),
     POCKETBASE_ADMIN_PASSWORD: z.string(),
+    SERVER_TAP_HOST: z.string().url(),
+    SERVER_TAP_KEY: z.string(),
   },
 
   /**
@@ -20,7 +22,7 @@ export const env = createEnv({
    * `NEXT_PUBLIC_`.
    */
   client: {
-    NEXT_PUBLIC_HOST: z.string(),
+    NEXT_PUBLIC_HOST: z.string().url(),
     NEXT_PUBLIC_POCKETBASE_HOST: z.string().url(),
     // NEXT_PUBLIC_CLIENTVAR: z.string(),
   },
@@ -37,6 +39,8 @@ export const env = createEnv({
     NEXT_PUBLIC_POCKETBASE_HOST: process.env.NEXT_PUBLIC_POCKETBASE_HOST,
     POCKETBASE_ADMIN_EMAIL: process.env.POCKETBASE_ADMIN_EMAIL,
     POCKETBASE_ADMIN_PASSWORD: process.env.POCKETBASE_ADMIN_PASSWORD,
+    SERVER_TAP_HOST: process.env.SERVER_TAP_HOST,
+    SERVER_TAP_KEY: process.env.SERVER_TAP_KEY,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially

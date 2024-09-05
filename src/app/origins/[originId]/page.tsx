@@ -9,6 +9,7 @@ import Image from "next/image";
 import palette from "@/styles/vars.module.scss";
 import containerStyles from "@/styles/container.module.scss";
 import ColorCode from "@/app/_components/ColorCode";
+import SetOrigin from "./setOrigin";
 
 const Origins: NextPage = () => {
   const [origin, setOrigin] = useState<APIFullOrigin>();
@@ -42,14 +43,17 @@ const Origins: NextPage = () => {
 
   if (!origin) {
     return (
-      <div className={containerStyles.textContainer}>
+      <div className={containerStyles.textContainer} style={{ flexGrow: 1 }}>
         <h1>Loading...</h1>
       </div>
     );
   }
 
   return (
-    <div className={containerStyles.textContainer} style={{ textAlign: "left" }}>
+    <div
+      className={containerStyles.textContainer}
+      style={{ textAlign: "left", flexGrow: 1, height: "calc(100vh - 4rem)", overflowY: "auto" }}
+    >
       <div style={{ width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }}>
         {origin !== undefined && (
           <Image
@@ -58,9 +62,12 @@ const Origins: NextPage = () => {
             style={{ width: "5rem", height: "auto", aspectRatio: 1, imageRendering: "pixelated" }}
           />
         )}
-        <p style={{ fontWeight: "bold", fontSize: "2rem", marginLeft: ".5rem" }}>
-          <ColorCode>{origin.name}</ColorCode>
-        </p>
+        <div style={{ marginLeft: ".5rem" }}>
+          <p style={{ fontWeight: "bold", fontSize: "2rem" }}>
+            <ColorCode>{origin.name}</ColorCode>
+          </p>
+          <p style={{ fontSize: "1rem", color: "lightgray" }}>{origin.id}</p>
+        </div>
         <div style={{ flexGrow: 1 }} />
         <div>
           <span style={{ fontWeight: "bold" }}>Impact: </span>
@@ -85,6 +92,7 @@ const Origins: NextPage = () => {
           );
         })}
       </div>
+      <SetOrigin originId={originId as string} />
     </div>
   );
 };
