@@ -2,7 +2,7 @@ import Button from "@/app/_components/button";
 import MCUsername from "@/app/apply/_mcusername";
 import axios from "axios";
 import { useState } from "react";
-import { ZodError } from "zod";
+import { type ZodError } from "zod";
 
 interface IProps {
   originId: string;

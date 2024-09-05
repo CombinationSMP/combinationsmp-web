@@ -1,6 +1,6 @@
 "use client";
 
-import { DOMAttributes, HTMLAttributes, useState } from "react";
+import { type DOMAttributes, type HTMLAttributes, useState } from "react";
 import styles from "./button.module.scss";
 import classNames from "classnames";
 import { useRouter } from "next/navigation";

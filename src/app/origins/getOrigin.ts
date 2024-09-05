@@ -1,7 +1,7 @@
 "use server";
 
 import fs from "fs/promises";
-import { existsSync, statSync } from "fs";
+import { existsSync } from "fs";
 import type { APIFullOrigin, ImageImport, OriginIcon, StoredOrigin, StoredOriginLang } from "@/types";
 import getPower from "./getPower";
 import disabled from "@/origins/disabled.json";

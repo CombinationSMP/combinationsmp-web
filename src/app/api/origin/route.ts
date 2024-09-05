@@ -26,7 +26,7 @@ interface PlayerInfo {
   op: boolean;
   balance: number;
   location: [number, number, number];
-  dimension: "NORMAL" | string;
+  dimension: string;
   health: number;
   hunger: number;
   saturation: number;

@@ -1,4 +1,4 @@
-import { CSSProperties, useEffect, useMemo, useState } from "react";
+import { type CSSProperties, useEffect, useMemo, useState } from "react";
 import getHTML from "./getHTML";
 
 interface IProps {
